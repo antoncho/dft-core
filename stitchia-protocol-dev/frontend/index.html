@@ -45,23 +45,37 @@
             <li><span class="dot steward"></span>Steward</li>
             <li><span class="dot initiator"></span>Initiator</li>
           </ul>
-          <div class="metric">89 Spiral Members</div>
+          <div id="membersMetric" class="metric">— Spiral Members</div>
         </div>
         <div class="treasury">
           <h3>Treasury</h3>
-          <div class="value"><strong>3,567 ETH</strong></div>
-          <div class="sub">1,984 ETH Staking • 1,007 ETH Protocol</div>
+          <div id="treasuryValue" class="value"><strong>— ETH</strong></div>
+          <div id="treasurySub" class="sub">—</div>
         </div>
         <div class="proposals">
           <h3>Proposals</h3>
-          <ul>
-            <li><strong>Staking Program Iteration</strong><span>In Progress (5d)</span></li>
-            <li><strong>Treasury Allocation Adjustment</strong><span>Active (2d)</span></li>
-            <li><strong>Incentive Structures Update</strong><span>Active (7d)</span></li>
-          </ul>
+          <ul id="proposalsList"></ul>
         </div>
       </div>
     </section>
   </main>
+  <script>
+    fetch('data.json').then(r => r.json()).then(d => {
+      const m = d.governance?.members_total ?? null;
+      if (m !== null) document.getElementById('membersMetric').textContent = `${m} Spiral Members`;
+      const t = d.treasury || {};
+      if (t.total_eth != null) document.getElementById('treasuryValue').innerHTML = `<strong>${t.total_eth.toLocaleString()} ETH</strong>`;
+      document.getElementById('treasurySub').textContent = `${(t.staking_eth||0).toLocaleString()} ETH Staking • ${(t.protocol_eth||0).toLocaleString()} ETH Protocol`;
+      const ul = document.getElementById('proposalsList');
+      (d.proposals?.items || []).forEach(p => {
+        const li = document.createElement('li');
+        const s = document.createElement('span');
+        s.textContent = `${p.status} (${p.age_days}d)`;
+        const b = document.createElement('strong');
+        b.textContent = p.title;
+        li.appendChild(b); li.appendChild(s); ul.appendChild(li);
+      });
+    }).catch(() => {});
+  </script>
 </body>
 </html>

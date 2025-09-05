@@ -8,6 +8,7 @@ license: Public-Licensed / CodexLinked
 tags: [dashboard, governance, treasury, proposals]
 links:
   - stitchia-protocol-dev/scrolls/genesys_nft_mint.md
+dashboard: {"governance":{"roles":["Anchor","Architect","Steward","Initiator"],"counts":{"Anchor":24,"Architect":18,"Steward":30,"Initiator":17}},"treasury":{"total_eth":3567,"staking_eth":1984,"protocol_eth":1007,"updated_at":"2025-09-05T00:00:00Z"},"proposals":{"items":[{"title":"Staking Program Iteration","status":"In Progress","age_days":5},{"title":"Treasury Allocation Adjustment","status":"Active","age_days":2},{"title":"Incentive Structures Update","status":"Active","age_days":7}]}}
 ---
 
 # 🧬 DAO Dashboard
@@ -32,4 +33,3 @@ This scroll defines the DAO Dashboard framing used for governance visibility.
 
 ## Ethics
 Display avoids implying financial returns. Governance metrics emphasize participation and stewardship.
-

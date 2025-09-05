@@ -13,6 +13,7 @@ from .quantum_cascade import cascade_integrity
 from .frontmatter import parse_frontmatter
 from .legal_kernel import assign_license
 from .config_loader import load_config
+from .dashboard_builder import build_and_write
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VAULT_DIR = reg.VAULT_DIR
@@ -97,6 +98,12 @@ def process_scroll(path: str) -> int:
                 s["links"] = links
         save_ledger(ledger)
         print(f"[ok] Scroll already in registry -> id={scroll_id}")
+    # Auto-regenerate dashboard JSON on every scroll process
+    try:
+        path = build_and_write()
+        print(f"[ok] Dashboard data updated -> {os.path.relpath(path, ROOT)}")
+    except Exception as e:
+        print(f"[warn] Dashboard build failed: {e}")
     return 0
 
 
