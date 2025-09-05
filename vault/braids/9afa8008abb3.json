@@ -1,0 +1,36 @@
+{
+  "id": "9afa8008abb3",
+  "title": "🧬 Scroll: Alpha Governance",
+  "nodes": [
+    {
+      "id": "9afa8008abb3",
+      "label": "🧬 Scroll: Alpha Governance",
+      "type": "scroll"
+    },
+    {
+      "id": "6ba6ac2dbfd1",
+      "label": "🧬 Scroll: Beta Ethics",
+      "type": "scroll"
+    }
+  ],
+  "edges": [
+    {
+      "from": "9afa8008abb3",
+      "to": "6ba6ac2dbfd1",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "ethics"
+      ]
+    }
+  ],
+  "context": {
+    "source": "vault/documents/alpha_scroll.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs"
+    }
+  }
+}

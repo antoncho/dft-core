@@ -1,0 +1,18 @@
+# OS / editor
+.DS_Store
+.vscode/
+
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+.python-version
+
+# Node (if used in subfolders)
+node_modules/
+
+# Vault exports (keep ledger + braids by default)
+# Uncomment to ignore exports if needed
+# vault/registry/export.json
+

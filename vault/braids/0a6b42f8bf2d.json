@@ -1,0 +1,21 @@
+{
+  "id": "0a6b42f8bf2d",
+  "title": "🧬 Scroll: Creator Crowdfunding Cluster",
+  "nodes": [
+    {
+      "id": "0a6b42f8bf2d",
+      "label": "🧬 Scroll: Creator Crowdfunding Cluster",
+      "type": "scroll"
+    }
+  ],
+  "edges": [],
+  "context": {
+    "source": "stitchia-protocol-dev/scrolls/creator_cluster_scroll.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs"
+    }
+  }
+}

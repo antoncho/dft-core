@@ -1,0 +1,13 @@
+---
+title: "🧬 Scroll: Beta Ethics"
+classification: Governance+Ethics+StrategicDesign
+validators: ["Ethics Steward"]
+license: Public-Licensed / CodexLinked
+tags: [ethics]
+links: []
+---
+
+# 🧬 Scroll: Beta Ethics
+
+## Intent
+Focus on ethics guardrails.

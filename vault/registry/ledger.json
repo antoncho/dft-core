@@ -1,0 +1,108 @@
+{
+  "scrolls": [
+    {
+      "id": "0a6b42f8bf2d",
+      "filename": "stitchia-protocol-dev/scrolls/creator_cluster_scroll.md",
+      "title": "🧬 Scroll: Creator Crowdfunding Cluster",
+      "signature": "0a6b42f8bf2de32ad4e479306b1b0c1a222f42bab11cbf812f6c14b7d26cc0d6",
+      "ethics_status": "flagged",
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-05T19:00:44.555120Z",
+      "ethics_reasons": [
+        "validators required but missing"
+      ],
+      "ontology": [
+        "Mechanics",
+        "Purpose",
+        "🧬 Scroll: Creator Crowdfunding Cluster"
+      ],
+      "cascade": {
+        "integrity": "0a6b42f8bf2de32ad4e479306b1b0c1a222f42bab11cbf812f6c14b7d26cc0d6",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [],
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": "9afa8008abb3",
+      "filename": "vault/documents/alpha_scroll.md",
+      "title": "🧬 Scroll: Alpha Governance",
+      "signature": "9afa8008abb3d92826daa757700d46242793ff774a478c9970319338042a4dde",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-05T19:15:18.876693Z",
+      "ontology": [
+        "Design",
+        "Ethics",
+        "Intent",
+        "🧬 Scroll: Alpha Governance"
+      ],
+      "cascade": {
+        "integrity": "9afa8008abb3d92826daa757700d46242793ff774a478c9970319338042a4dde",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "Ethics Steward"
+      ],
+      "tags": [
+        "governance",
+        "ethics"
+      ],
+      "links": []
+    },
+    {
+      "id": "6ba6ac2dbfd1",
+      "filename": "vault/documents/beta_scroll.md",
+      "title": "🧬 Scroll: Beta Ethics",
+      "signature": "6ba6ac2dbfd1addde09a000e40efd86d7d8c5636937c60b65280b2559d1b0e95",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-05T19:15:18.933443Z",
+      "ontology": [
+        "Intent",
+        "🧬 Scroll: Beta Ethics"
+      ],
+      "cascade": {
+        "integrity": "6ba6ac2dbfd1addde09a000e40efd86d7d8c5636937c60b65280b2559d1b0e95",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "Ethics Steward"
+      ],
+      "tags": [
+        "ethics"
+      ],
+      "links": []
+    }
+  ]
+}
