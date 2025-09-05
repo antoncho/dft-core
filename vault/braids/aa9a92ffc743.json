@@ -1,0 +1,58 @@
+{
+  "id": "aa9a92ffc743",
+  "title": "🧬 Scroll: GENESYS NFT – Initiator Mint",
+  "nodes": [
+    {
+      "id": "aa9a92ffc743",
+      "label": "🧬 Scroll: GENESYS NFT – Initiator Mint",
+      "type": "scroll"
+    },
+    {
+      "id": "9afa8008abb3",
+      "label": "🧬 Scroll: Alpha Governance",
+      "type": "scroll"
+    },
+    {
+      "id": "29a48fd5e662",
+      "label": "🧬 Scroll: DAO Dashboard",
+      "type": "scroll"
+    }
+  ],
+  "edges": [
+    {
+      "from": "aa9a92ffc743",
+      "to": "9afa8008abb3",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "governance"
+      ]
+    },
+    {
+      "from": "aa9a92ffc743",
+      "to": "29a48fd5e662",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "aa9a92ffc743",
+      "to": "29a48fd5e662",
+      "type": "link",
+      "weight": 1
+    }
+  ],
+  "context": {
+    "source": "stitchia-protocol-dev/scrolls/genesys_nft_mint.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

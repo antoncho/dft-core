@@ -103,6 +103,93 @@
         "ethics"
       ],
       "links": []
+    },
+    {
+      "id": "aa9a92ffc743",
+      "filename": "stitchia-protocol-dev/scrolls/genesys_nft_mint.md",
+      "title": "🧬 Scroll: GENESYS NFT – Initiator Mint",
+      "signature": "aa9a92ffc7435baceebe1aa90bfcb3d58411194f20040a5d9ea5f03b43cfe7cb",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-05T21:37:37.671711Z",
+      "ontology": [
+        "Attributes",
+        "Ethics",
+        "Governance Links",
+        "Minting",
+        "🧬 GENESYS NFT – Initiator"
+      ],
+      "cascade": {
+        "integrity": "aa9a92ffc7435baceebe1aa90bfcb3d58411194f20040a5d9ea5f03b43cfe7cb",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Governance Architect\""
+      ],
+      "tags": [
+        "nft",
+        "genesis",
+        "governance",
+        "dashboard"
+      ],
+      "links": [
+        "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md"
+      ]
+    },
+    {
+      "id": "29a48fd5e662",
+      "filename": "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md",
+      "title": "🧬 Scroll: DAO Dashboard",
+      "signature": "29a48fd5e662933098f2478e8ee102711c98588af1ccbe444e574a9fa7b77eee",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-05T21:37:37.716400Z",
+      "ontology": [
+        "Ethics",
+        "Governance (Spiral Roles)",
+        "Proposals",
+        "Treasury",
+        "Wallet Integration",
+        "🧬 DAO Dashboard"
+      ],
+      "cascade": {
+        "integrity": "29a48fd5e662933098f2478e8ee102711c98588af1ccbe444e574a9fa7b77eee",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Data Steward\"",
+        "role: \"Governance Architect\""
+      ],
+      "tags": [
+        "dashboard",
+        "governance",
+        "treasury",
+        "proposals"
+      ],
+      "links": [
+        "stitchia-protocol-dev/scrolls/genesys_nft_mint.md"
+      ]
     }
   ]
 }

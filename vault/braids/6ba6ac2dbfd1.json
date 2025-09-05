@@ -1,0 +1,37 @@
+{
+  "id": "6ba6ac2dbfd1",
+  "title": "🧬 Scroll: Beta Ethics",
+  "nodes": [
+    {
+      "id": "6ba6ac2dbfd1",
+      "label": "🧬 Scroll: Beta Ethics",
+      "type": "scroll"
+    },
+    {
+      "id": "9afa8008abb3",
+      "label": "🧬 Scroll: Alpha Governance",
+      "type": "scroll"
+    }
+  ],
+  "edges": [
+    {
+      "from": "6ba6ac2dbfd1",
+      "to": "9afa8008abb3",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "ethics"
+      ]
+    }
+  ],
+  "context": {
+    "source": "vault/documents/beta_scroll.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

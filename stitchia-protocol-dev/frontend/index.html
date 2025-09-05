@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SYNQ Dashboard</title>
+  <title>TheGenuine Collective – GENESYS + DAO Dashboard</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>🧬 Welcome to SYNQ</h1>
-  <p>The token of cultural impact and regenerative coordination.</p>
+  <header class="site-header">@ TheGenuine Collective</header>
+  <main class="grid">
+    <section class="card mint">
+      <h2>Genesis NFT Mint</h2>
+      <div class="mint-grid">
+        <div class="mint-media">
+          <div class="logo">GENESYS NFT</div>
+          <div class="subtitle">INITIATOR</div>
+          <p class="desc">This NFT represents role in the Geneals Structure of TheGenuine Collective DA: Role: Initiator</p>
+        </div>
+        <div class="mint-attrs">
+          <ul>
+            <li><span>Role</span><strong>Initiator</strong></li>
+            <li><span>Spiral Tier</span><strong>Regen Spiral</strong></li>
+            <li><span>Generation</span><strong>Genesis</strong></li>
+          </ul>
+          <div class="mint-controls">
+            <input type="number" min="1" value="1" />
+            <select><option>ETH</option></select>
+          </div>
+          <button class="primary">Mint NFT (0.44 ETH)</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card dashboard">
+      <div class="dashboard-header">
+        <h2>DAO Dashboard</h2>
+        <button class="secondary">Connect Wallet</button>
+      </div>
+      <div class="dash-grid">
+        <div class="gov">
+          <h3>Governance</h3>
+          <div class="donut" aria-label="Spiral Roles donut"></div>
+          <ul class="legend">
+            <li><span class="dot anchor"></span>Anchor</li>
+            <li><span class="dot architect"></span>Architect</li>
+            <li><span class="dot steward"></span>Steward</li>
+            <li><span class="dot initiator"></span>Initiator</li>
+          </ul>
+          <div class="metric">89 Spiral Members</div>
+        </div>
+        <div class="treasury">
+          <h3>Treasury</h3>
+          <div class="value"><strong>3,567 ETH</strong></div>
+          <div class="sub">1,984 ETH Staking • 1,007 ETH Protocol</div>
+        </div>
+        <div class="proposals">
+          <h3>Proposals</h3>
+          <ul>
+            <li><strong>Staking Program Iteration</strong><span>In Progress (5d)</span></li>
+            <li><strong>Treasury Allocation Adjustment</strong><span>Active (2d)</span></li>
+            <li><strong>Incentive Structures Update</strong><span>Active (7d)</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

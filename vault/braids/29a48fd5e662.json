@@ -1,59 +1,52 @@
 {
-  "id": "9afa8008abb3",
-  "title": "🧬 Scroll: Alpha Governance",
+  "id": "29a48fd5e662",
+  "title": "🧬 Scroll: DAO Dashboard",
   "nodes": [
+    {
+      "id": "29a48fd5e662",
+      "label": "🧬 Scroll: DAO Dashboard",
+      "type": "scroll"
+    },
     {
       "id": "9afa8008abb3",
       "label": "🧬 Scroll: Alpha Governance",
       "type": "scroll"
     },
     {
-      "id": "6ba6ac2dbfd1",
-      "label": "🧬 Scroll: Beta Ethics",
-      "type": "scroll"
-    },
-    {
       "id": "aa9a92ffc743",
       "label": "🧬 Scroll: GENESYS NFT – Initiator Mint",
-      "type": "scroll"
-    },
-    {
-      "id": "29a48fd5e662",
-      "label": "🧬 Scroll: DAO Dashboard",
       "type": "scroll"
     }
   ],
   "edges": [
     {
-      "from": "9afa8008abb3",
-      "to": "6ba6ac2dbfd1",
+      "from": "29a48fd5e662",
+      "to": "9afa8008abb3",
       "type": "tag",
       "weight": 1,
       "shared": [
-        "ethics"
+        "governance"
       ]
     },
     {
-      "from": "9afa8008abb3",
+      "from": "29a48fd5e662",
       "to": "aa9a92ffc743",
       "type": "tag",
-      "weight": 1,
+      "weight": 2,
       "shared": [
+        "dashboard",
         "governance"
       ]
     },
     {
-      "from": "9afa8008abb3",
-      "to": "29a48fd5e662",
-      "type": "tag",
-      "weight": 1,
-      "shared": [
-        "governance"
-      ]
+      "from": "29a48fd5e662",
+      "to": "aa9a92ffc743",
+      "type": "link",
+      "weight": 1
     }
   ],
   "context": {
-    "source": "vault/documents/alpha_scroll.md",
+    "source": "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md",
     "clusters": {
       "1": "Creator Crowdfunding",
       "2": "Collective Pools",
