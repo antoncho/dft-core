@@ -453,6 +453,28 @@ def cmd_export_doc(args):
     print(f"[export] DOC -> {os.path.relpath(d, ROOT)}")
     return 0
 
+
+def cmd_export_docs_all(args):
+    ensure_dirs()
+    ledger = load_ledger()
+    outdir = os.path.abspath(args.outdir)
+    os.makedirs(outdir, exist_ok=True)
+    count = 0
+    for s in ledger.get("scrolls", []):
+        src = os.path.join(ROOT, s.get("filename"))
+        if not os.path.exists(src):
+            continue
+        base = os.path.splitext(os.path.basename(src))[0]
+        txt_path = os.path.join(outdir, f"{base}.txt")
+        doc_path = os.path.join(outdir, f"{base}.doc")
+        try:
+            export_md(src, txt_path, doc_path)
+            count += 1
+        except Exception as e:
+            print(f"[export] failed for {src}: {e}")
+    print(f"[export] batch complete -> {count} scroll(s) exported to {os.path.relpath(outdir, ROOT)}")
+    return 0
+
 def build_parser():
     p = argparse.ArgumentParser(description="GILC Quantum Kernel CLI")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -511,6 +533,11 @@ def build_parser():
     g.add_argument("--id", help="Scroll ID from registry")
     p10.add_argument("--outdir", default=os.path.join(ROOT, "stitchia-protocol-dev", "docs", "exports"), help="Output directory")
     p10.set_defaults(func=cmd_export_doc)
+
+    # export-docs-all: batch export all registry scrolls
+    p11 = sub.add_parser("export-docs-all", help="Export all registry scrolls to TXT and DOC (RTF)")
+    p11.add_argument("--outdir", default=os.path.join(ROOT, "stitchia-protocol-dev", "docs", "exports"), help="Output directory")
+    p11.set_defaults(func=cmd_export_docs_all)
 
     return p
 
