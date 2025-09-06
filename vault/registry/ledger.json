@@ -189,7 +189,17 @@
       ],
       "links": [
         "stitchia-protocol-dev/scrolls/genesys_nft_mint.md"
-      ]
+      ],
+      "seals": [
+        {
+          "by": "Anton Christoff",
+          "role": "Ethics Steward",
+          "status": "approved",
+          "note": "Dashboard language OK",
+          "time": "2025-09-06T14:11:25.151437Z"
+        }
+      ],
+      "seal_status": "approved"
     },
     {
       "id": "9a66229b0f5d",

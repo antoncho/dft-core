@@ -15,6 +15,7 @@ from .legal_kernel import assign_license
 from .config_loader import load_config
 from .dashboard_builder import build_and_write
 from .markdown_exporter import export_md
+from .validator_workflow import add_seal
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VAULT_DIR = reg.VAULT_DIR
@@ -37,7 +38,10 @@ def save_ledger(ledger):
     reg.save_ledger(ledger)
 
 
-def process_scroll(path: str) -> int:
+from typing import Optional
+
+
+def process_scroll(path: str, profile: Optional[str] = None) -> int:
     ensure_dirs()
     path = os.path.abspath(path)
     if not os.path.exists(path):
@@ -47,7 +51,7 @@ def process_scroll(path: str) -> int:
         data = f.read()
     text = data.decode("utf-8", errors="replace")
     meta, body = parse_frontmatter(text)
-    cfg = load_config()
+    cfg = load_config(profile)
     title = meta.get("title") or extract_title(body)
     digest = compute_signature(data)
     scroll_id = scroll_id_from_sig(digest)
@@ -114,7 +118,7 @@ def process_scroll(path: str) -> int:
 
 
 def cmd_process(args):
-    return process_scroll(args.path)
+    return process_scroll(args.path, getattr(args, "profile", None))
 
 
 def generate_braid_by_id(sid: str) -> int:
@@ -334,7 +338,7 @@ def cmd_watch(args):
                 batch = sorted(pending)
                 print(f"[watch] processing {len(batch)} file(s) (debounce={debounce:.2f}s)")
                 for p in batch:
-                    process_scroll(p)
+                    process_scroll(p, getattr(args, "profile", None))
                 try:
                     outp = build_and_write()
                     print(f"[watch] dashboard updated -> {os.path.relpath(outp, ROOT)}")
@@ -475,6 +479,89 @@ def cmd_export_docs_all(args):
     print(f"[export] batch complete -> {count} scroll(s) exported to {os.path.relpath(outdir, ROOT)}")
     return 0
 
+
+def cmd_export_docs_all(args):
+    ensure_dirs()
+    ledger = load_ledger()
+    outdir = os.path.abspath(args.outdir)
+    os.makedirs(outdir, exist_ok=True)
+    count = 0
+    for s in ledger.get("scrolls", []):
+        src = os.path.join(ROOT, s.get("filename"))
+        if not os.path.exists(src):
+            continue
+        base = os.path.splitext(os.path.basename(src))[0]
+        txt_path = os.path.join(outdir, f"{base}.txt")
+        doc_path = os.path.join(outdir, f"{base}.doc")
+        try:
+            export_md(src, txt_path, doc_path)
+            count += 1
+        except Exception as e:
+            print(f"[export] failed for {src}: {e}")
+    print(f"[export] batch complete -> {count} scroll(s) exported to {os.path.relpath(outdir, ROOT)}")
+    return 0
+
+
+def cmd_export_zip(args):
+    ensure_dirs()
+    src = os.path.abspath(args.src)
+    out = os.path.abspath(args.output)
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    import zipfile
+    count = 0
+    with zipfile.ZipFile(out, 'w', compression=zipfile.ZIP_DEFLATED) as zf:
+        for root, _dirs, files in os.walk(src):
+            for fn in files:
+                if not (fn.lower().endswith('.txt') or fn.lower().endswith('.doc')):
+                    continue
+                p = os.path.join(root, fn)
+                arc = os.path.relpath(p, src)
+                zf.write(p, arc)
+                count += 1
+    print(f"[export] zip -> {out} ({count} file(s))")
+    return 0
+
+
+def cmd_serve(args):
+    ensure_dirs()
+    frontend_dir = os.path.join(ROOT, "stitchia-protocol-dev", "frontend")
+    if not os.path.isdir(frontend_dir):
+        print(f"[error] Frontend directory missing: {frontend_dir}", file=sys.stderr)
+        return 1
+    os.chdir(frontend_dir)
+    from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+    port = int(getattr(args, "port", 8000) or 8000)
+    print(f"[serve] http://localhost:{port} (serving {frontend_dir})")
+    ThreadingHTTPServer(("0.0.0.0", port), SimpleHTTPRequestHandler).serve_forever()
+
+
+def cmd_open(args):
+    if getattr(args, "frontend", False):
+        path = os.path.join(ROOT, "stitchia-protocol-dev", "frontend", "index.html")
+        print(path)
+        return 0
+    sid = getattr(args, "id", None)
+    if sid:
+        try:
+            path = _resolve_path_by_id(sid)
+        except FileNotFoundError as e:
+            print(f"[error] {e}", file=sys.stderr)
+            return 1
+        print(path)
+        return 0
+    print("[error] specify --id or --frontend", file=sys.stderr)
+    return 1
+
+
+def cmd_seal(args):
+    try:
+        entry = add_seal(args.id, args.by, args.role, args.status, args.note)
+    except KeyError as e:
+        print(f"[error] {e}", file=sys.stderr)
+        return 1
+    print(f"[seal] {args.status} by {args.by} ({args.role}) -> {entry.get('id')} | seal_status={entry.get('seal_status')}")
+    return 0
+
 def build_parser():
     p = argparse.ArgumentParser(description="GILC Quantum Kernel CLI")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -486,6 +573,7 @@ def build_parser():
 
     p1 = sub.add_parser("process", help="Execute scroll through Ethics+Execution Kernel")
     p1.add_argument("path", help="Path to scroll markdown file")
+    p1.add_argument("--profile", help="Config profile to apply (e.g., default, strict, permissive)")
     p1.set_defaults(func=cmd_process)
 
     p2 = sub.add_parser("braid", help="Visualize semantic topology for a scroll")
@@ -510,6 +598,7 @@ def build_parser():
         os.path.join(ROOT, "vault", "documents"),
         os.path.join(ROOT, "stitchia-protocol-dev", "scrolls"),
     ], help="Directories to watch for .md changes")
+    p6.add_argument("--profile", help="Config profile (e.g., default, strict, permissive)")
     p6.set_defaults(func=cmd_watch)
 
     # add: create a new scroll from template
@@ -538,6 +627,32 @@ def build_parser():
     p11 = sub.add_parser("export-docs-all", help="Export all registry scrolls to TXT and DOC (RTF)")
     p11.add_argument("--outdir", default=os.path.join(ROOT, "stitchia-protocol-dev", "docs", "exports"), help="Output directory")
     p11.set_defaults(func=cmd_export_docs_all)
+
+    # export-zip: zip all TXT/DOC exports for sharing
+    p12 = sub.add_parser("export-zip", help="Package all TXT/DOC exports into a ZIP archive")
+    p12.add_argument("--src", default=os.path.join(ROOT, "stitchia-protocol-dev", "docs", "exports"), help="Source folder to zip")
+    p12.add_argument("--output", default=os.path.join(ROOT, "stitchia-protocol-dev", "docs", "exports", "exports.zip"), help="ZIP output path")
+    p12.set_defaults(func=cmd_export_zip)
+
+    # serve: static web server for frontend
+    p13 = sub.add_parser("serve", help="Serve the frontend directory via a local HTTP server")
+    p13.add_argument("--port", type=int, default=8000, help="Port to listen on (default 8000)")
+    p13.set_defaults(func=cmd_serve)
+
+    # open: print the path for a scroll by id, or the frontend
+    p14 = sub.add_parser("open", help="Show the local path to a resource (scroll by id or frontend)")
+    p14.add_argument("--id", help="Scroll ID to open")
+    p14.add_argument("--frontend", action="store_true", help="Show the frontend index.html path")
+    p14.set_defaults(func=cmd_open)
+
+    # seal: add a validator seal (approve/reject)
+    p15 = sub.add_parser("seal", help="Add a validator seal to a scroll entry")
+    p15.add_argument("--id", required=True, help="Scroll ID")
+    p15.add_argument("--by", required=True, help="Validator identity (name or key)")
+    p15.add_argument("--role", required=True, help="Validator role (e.g., Ethics Steward)")
+    p15.add_argument("--status", required=True, choices=["approved", "rejected"], help="Seal decision")
+    p15.add_argument("--note", default="", help="Optional note")
+    p15.set_defaults(func=cmd_seal)
 
     return p
 
