@@ -278,6 +278,50 @@
       "links": [
         "stitchia-protocol-dev/scrolls/genesys_nft_mint.md"
       ]
+    },
+    {
+      "id": "77e28d108ed5",
+      "filename": "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md",
+      "title": "🧬 Scroll: DAO Dashboard",
+      "signature": "77e28d108ed50fad26fa9cac2a0dbada56c289011649d9456899c779fed18b91",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-05T21:48:29.328923Z",
+      "ontology": [
+        "Ethics",
+        "Governance (Spiral Roles)",
+        "Proposals",
+        "Treasury",
+        "Wallet Integration",
+        "🧬 DAO Dashboard"
+      ],
+      "cascade": {
+        "integrity": "77e28d108ed50fad26fa9cac2a0dbada56c289011649d9456899c779fed18b91",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Data Steward\"",
+        "role: \"Governance Architect\""
+      ],
+      "tags": [
+        "dashboard",
+        "governance",
+        "treasury",
+        "proposals"
+      ],
+      "links": [
+        "stitchia-protocol-dev/scrolls/genesys_nft_mint.md"
+      ]
     }
   ]
 }

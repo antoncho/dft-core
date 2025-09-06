@@ -16,4 +16,4 @@ echo "[✓] Execution Registry Online"
 
 export FABRICA_EPOCH="$EPOCH"
 echo "Environment ready: vault/ and kernel/ active"
-
+echo "Try: './quantum init --with-example', './quantum watch', './quantum preview'"

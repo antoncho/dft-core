@@ -98,6 +98,11 @@ def process_scroll(path: str) -> int:
                 s["links"] = links
         save_ledger(ledger)
         print(f"[ok] Scroll already in registry -> id={scroll_id}")
+    # Generate braid for this scroll immediately for intuitive feedback
+    try:
+        generate_braid_by_id(scroll_id)
+    except Exception:
+        pass
     # Auto-regenerate dashboard JSON on every scroll process
     try:
         path = build_and_write()
@@ -305,14 +310,37 @@ def cmd_watch(args):
     last_ledger_mtime = os.path.getmtime(LEDGER_PATH) if os.path.exists(LEDGER_PATH) else 0
     print(f"[watch] watching: {', '.join([d for d in dirs if os.path.isdir(d)])}")
     try:
+        # Debounce state
+        import time as _t
+        debounce = max(0.0, float(getattr(args, 'debounce', 0.0)))
+        pending: set[str] = set()
+        pending_since: float | None = None
         while True:
             now = _scan_md_files(dirs)
             # detect changes
             changed = [p for p, m in now.items() if p not in last or last[p] != m]
-            for p in sorted(changed):
-                if os.path.exists(p):
-                    print(f"[watch] change detected -> {os.path.relpath(p, ROOT)}")
+            if changed:
+                for p in sorted(changed):
+                    if os.path.exists(p):
+                        rel = os.path.relpath(p, ROOT)
+                        print(f"[watch] change detected -> {rel}")
+                        pending.add(p)
+                if pending_since is None:
+                    pending_since = _t.time()
+
+            # If debounce window elapsed, process batch
+            if pending and (debounce == 0.0 or (_t.time() - (pending_since or 0)) >= debounce):
+                batch = sorted(pending)
+                print(f"[watch] processing {len(batch)} file(s) (debounce={debounce:.2f}s)")
+                for p in batch:
                     process_scroll(p)
+                try:
+                    outp = build_and_write()
+                    print(f"[watch] dashboard updated -> {os.path.relpath(outp, ROOT)}")
+                except Exception as e:
+                    print(f"[watch] dashboard build failed: {e}")
+                pending.clear()
+                pending_since = None
 
             # if registry changed, rebuild all braids
             reg_m = os.path.getmtime(LEDGER_PATH) if os.path.exists(LEDGER_PATH) else 0
@@ -321,6 +349,11 @@ def cmd_watch(args):
                 ledger = load_ledger()
                 for s in ledger.get("scrolls", []):
                     generate_braid_by_id(s.get("id"))
+                try:
+                    outp = build_and_write()
+                    print(f"[watch] dashboard updated -> {os.path.relpath(outp, ROOT)}")
+                except Exception as e:
+                    print(f"[watch] dashboard build failed: {e}")
 
             last = now
             import time
@@ -329,9 +362,80 @@ def cmd_watch(args):
         print("[watch] stopped")
         return 0
 
+
+def cmd_init(args):
+    ensure_dirs()
+    print(f"[init] vault ready at {os.path.relpath(VAULT_DIR, ROOT)}")
+    if getattr(args, "with_example", False):
+        tpl_path = os.path.join(ROOT, "templates", "scroll_template.md")
+        out = os.path.join(DOCS_DIR, "example_scroll.md")
+        try:
+            with open(tpl_path, "r", encoding="utf-8") as f:
+                content = f.read()
+            with open(out, "w", encoding="utf-8") as f:
+                f.write(content)
+            print(f"[init] example scroll -> {os.path.relpath(out, ROOT)}")
+        except Exception as e:
+            print(f"[init] could not create example scroll: {e}")
+    return 0
+
+
+def cmd_add(args):
+    ensure_dirs()
+    title = args.title.strip()
+    out_path = os.path.abspath(args.out)
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    template = (
+        "---\n"
+        f"title: \"{title}\"\n"
+        "classification: Governance+Ethics+StrategicDesign\n"
+        "validators: []\n"
+        "license: Public-Licensed / CodexLinked\n"
+        "tags: []\n"
+        "links: []\n"
+        "---\n\n"
+        f"# {title}\n\n"
+        "## Intent\nDescribe intent here.\n\n"
+        "## Design\nDescribe design here.\n\n"
+        "## Ethics\nList ethics considerations here.\n\n"
+    )
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(template)
+    print(f"[add] created -> {os.path.relpath(out_path, ROOT)}")
+    return 0
+
+
+def cmd_status(_args):
+    ensure_dirs()
+    ledger = load_ledger()
+    scrolls = ledger.get("scrolls", [])
+    total = len(scrolls)
+    flagged = sum(1 for s in scrolls if s.get("ethics_status") == "flagged")
+    print(f"Scrolls: {total} | Flagged: {flagged}")
+    if total:
+        print("Recent:")
+        for s in scrolls[-5:]:
+            print(f"- {s.get('id')} | {s.get('title')} | ethics={s.get('ethics_status')}")
+    return 0
+
+
+def cmd_build(_args):
+    ensure_dirs()
+    ledger = load_ledger()
+    for s in ledger.get("scrolls", []):
+        generate_braid_by_id(s.get("id"))
+    out = build_and_write()
+    print(f"[build] dashboard updated -> {os.path.relpath(out, ROOT)}")
+    return 0
+
 def build_parser():
     p = argparse.ArgumentParser(description="GILC Quantum Kernel CLI")
     sub = p.add_subparsers(dest="cmd", required=True)
+
+    # init: scaffold vault + optional template scroll
+    p0 = sub.add_parser("init", help="Initialize vault and optional example scroll")
+    p0.add_argument("--with-example", action="store_true", help="Create an example scroll from template")
+    p0.set_defaults(func=cmd_init)
 
     p1 = sub.add_parser("process", help="Execute scroll through Ethics+Execution Kernel")
     p1.add_argument("path", help="Path to scroll markdown file")
@@ -354,11 +458,26 @@ def build_parser():
 
     p6 = sub.add_parser("watch", help="Watch scrolls and auto-process + regenerate braids")
     p6.add_argument("--interval", type=float, default=1.0, help="Polling interval seconds")
+    p6.add_argument("--debounce", type=float, default=0.5, help="Batch changes within N seconds before processing")
     p6.add_argument("--dirs", nargs="*", default=[
         os.path.join(ROOT, "vault", "documents"),
         os.path.join(ROOT, "stitchia-protocol-dev", "scrolls"),
     ], help="Directories to watch for .md changes")
     p6.set_defaults(func=cmd_watch)
+
+    # add: create a new scroll from template
+    p7 = sub.add_parser("add", help="Create a new scroll from template")
+    p7.add_argument("--title", required=True, help="Title for the new scroll")
+    p7.add_argument("--out", default=os.path.join(DOCS_DIR, "new_scroll.md"), help="Output path")
+    p7.set_defaults(func=cmd_add)
+
+    # status: quick registry summary
+    p8 = sub.add_parser("status", help="Show registry summary and ethics flags")
+    p8.set_defaults(func=cmd_status)
+
+    # build: rebuild all braids and dashboard data
+    p9 = sub.add_parser("build", help="Rebuild all braids and dashboard data")
+    p9.set_defaults(func=cmd_build)
 
     return p
 

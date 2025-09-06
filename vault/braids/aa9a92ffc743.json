@@ -16,6 +16,21 @@
       "id": "29a48fd5e662",
       "label": "🧬 Scroll: DAO Dashboard",
       "type": "scroll"
+    },
+    {
+      "id": "9a66229b0f5d",
+      "label": "🧬 Scroll: DAO Dashboard",
+      "type": "scroll"
+    },
+    {
+      "id": "947f56e899cc",
+      "label": "🧬 Scroll: DAO Dashboard",
+      "type": "scroll"
+    },
+    {
+      "id": "77e28d108ed5",
+      "label": "🧬 Scroll: DAO Dashboard",
+      "type": "scroll"
     }
   ],
   "edges": [
@@ -40,7 +55,37 @@
     },
     {
       "from": "aa9a92ffc743",
-      "to": "29a48fd5e662",
+      "to": "9a66229b0f5d",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "aa9a92ffc743",
+      "to": "947f56e899cc",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "aa9a92ffc743",
+      "to": "77e28d108ed5",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "aa9a92ffc743",
+      "to": "77e28d108ed5",
       "type": "link",
       "weight": 1
     }

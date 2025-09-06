@@ -1,15 +1,15 @@
 {
-  "id": "9afa8008abb3",
-  "title": "🧬 Scroll: Alpha Governance",
+  "id": "9a66229b0f5d",
+  "title": "🧬 Scroll: DAO Dashboard",
   "nodes": [
     {
-      "id": "9afa8008abb3",
-      "label": "🧬 Scroll: Alpha Governance",
+      "id": "9a66229b0f5d",
+      "label": "🧬 Scroll: DAO Dashboard",
       "type": "scroll"
     },
     {
-      "id": "6ba6ac2dbfd1",
-      "label": "🧬 Scroll: Beta Ethics",
+      "id": "9afa8008abb3",
+      "label": "🧬 Scroll: Alpha Governance",
       "type": "scroll"
     },
     {
@@ -19,11 +19,6 @@
     },
     {
       "id": "29a48fd5e662",
-      "label": "🧬 Scroll: DAO Dashboard",
-      "type": "scroll"
-    },
-    {
-      "id": "9a66229b0f5d",
       "label": "🧬 Scroll: DAO Dashboard",
       "type": "scroll"
     },
@@ -40,62 +35,69 @@
   ],
   "edges": [
     {
-      "from": "9afa8008abb3",
-      "to": "6ba6ac2dbfd1",
+      "from": "9a66229b0f5d",
+      "to": "9afa8008abb3",
       "type": "tag",
       "weight": 1,
       "shared": [
-        "ethics"
+        "governance"
       ]
     },
     {
-      "from": "9afa8008abb3",
+      "from": "9a66229b0f5d",
       "to": "aa9a92ffc743",
       "type": "tag",
-      "weight": 1,
+      "weight": 2,
       "shared": [
+        "dashboard",
         "governance"
       ]
     },
     {
-      "from": "9afa8008abb3",
+      "from": "9a66229b0f5d",
       "to": "29a48fd5e662",
       "type": "tag",
-      "weight": 1,
+      "weight": 4,
       "shared": [
-        "governance"
+        "dashboard",
+        "governance",
+        "proposals",
+        "treasury"
       ]
     },
     {
-      "from": "9afa8008abb3",
-      "to": "9a66229b0f5d",
-      "type": "tag",
-      "weight": 1,
-      "shared": [
-        "governance"
-      ]
-    },
-    {
-      "from": "9afa8008abb3",
+      "from": "9a66229b0f5d",
       "to": "947f56e899cc",
       "type": "tag",
-      "weight": 1,
+      "weight": 4,
       "shared": [
-        "governance"
+        "dashboard",
+        "governance",
+        "proposals",
+        "treasury"
       ]
     },
     {
-      "from": "9afa8008abb3",
+      "from": "9a66229b0f5d",
       "to": "77e28d108ed5",
       "type": "tag",
-      "weight": 1,
+      "weight": 4,
       "shared": [
-        "governance"
+        "dashboard",
+        "governance",
+        "proposals",
+        "treasury"
       ]
+    },
+    {
+      "from": "9a66229b0f5d",
+      "to": "aa9a92ffc743",
+      "type": "link",
+      "weight": 1
     }
   ],
   "context": {
-    "source": "vault/documents/alpha_scroll.md",
+    "source": "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md",
     "clusters": {
       "1": "Creator Crowdfunding",
       "2": "Collective Pools",
