@@ -1,0 +1,150 @@
+{
+  "id": "649afd17c591",
+  "title": "🧬 GILC Fabrica – System Blueprint",
+  "nodes": [
+    {
+      "id": "649afd17c591",
+      "label": "🧬 GILC Fabrica – System Blueprint",
+      "type": "scroll"
+    },
+    {
+      "id": "9afa8008abb3",
+      "label": "🧬 Scroll: Alpha Governance",
+      "type": "scroll"
+    },
+    {
+      "id": "6ba6ac2dbfd1",
+      "label": "🧬 Scroll: Beta Ethics",
+      "type": "scroll"
+    },
+    {
+      "id": "aa9a92ffc743",
+      "label": "🧬 Scroll: GENESYS NFT – Initiator Mint",
+      "type": "scroll"
+    },
+    {
+      "id": "29a48fd5e662",
+      "label": "🧬 Scroll: DAO Dashboard",
+      "type": "scroll"
+    },
+    {
+      "id": "9a66229b0f5d",
+      "label": "🧬 Scroll: DAO Dashboard",
+      "type": "scroll"
+    },
+    {
+      "id": "947f56e899cc",
+      "label": "🧬 Scroll: DAO Dashboard",
+      "type": "scroll"
+    },
+    {
+      "id": "77e28d108ed5",
+      "label": "🧬 Scroll: DAO Dashboard",
+      "type": "scroll"
+    },
+    {
+      "id": "0a6b42f8bf2d",
+      "label": "🧬 Scroll: Creator Crowdfunding Cluster",
+      "type": "scroll"
+    }
+  ],
+  "edges": [
+    {
+      "from": "649afd17c591",
+      "to": "9afa8008abb3",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "ethics",
+        "governance"
+      ]
+    },
+    {
+      "from": "649afd17c591",
+      "to": "6ba6ac2dbfd1",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "ethics"
+      ]
+    },
+    {
+      "from": "649afd17c591",
+      "to": "aa9a92ffc743",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "649afd17c591",
+      "to": "29a48fd5e662",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "649afd17c591",
+      "to": "9a66229b0f5d",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "649afd17c591",
+      "to": "947f56e899cc",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "649afd17c591",
+      "to": "77e28d108ed5",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "649afd17c591",
+      "to": "0a6b42f8bf2d",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "from": "649afd17c591",
+      "to": "aa9a92ffc743",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "from": "649afd17c591",
+      "to": "77e28d108ed5",
+      "type": "link",
+      "weight": 1
+    }
+  ],
+  "context": {
+    "source": "stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

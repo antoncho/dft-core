@@ -322,6 +322,49 @@
       "links": [
         "stitchia-protocol-dev/scrolls/genesys_nft_mint.md"
       ]
+    },
+    {
+      "id": "649afd17c591",
+      "filename": "stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md",
+      "title": "🧬 GILC Fabrica – System Blueprint",
+      "signature": "649afd17c591e3df47efe8467aad5771be3531e5f6b846e3cf196741b12e7c01",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-06T12:12:47.457058Z",
+      "ontology": [
+        "🧬 GILC Fabrica – System Blueprint"
+      ],
+      "cascade": {
+        "integrity": "649afd17c591e3df47efe8467aad5771be3531e5f6b846e3cf196741b12e7c01",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Governance Architect\""
+      ],
+      "tags": [
+        "blueprint",
+        "governance",
+        "ethics",
+        "ontology",
+        "braid",
+        "dashboard"
+      ],
+      "links": [
+        "stitchia-protocol-dev/scrolls/creator_cluster_scroll.md",
+        "stitchia-protocol-dev/scrolls/genesys_nft_mint.md",
+        "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md"
+      ]
     }
   ]
 }
