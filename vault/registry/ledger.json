@@ -365,6 +365,95 @@
         "stitchia-protocol-dev/scrolls/genesys_nft_mint.md",
         "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md"
       ]
+    },
+    {
+      "id": "b67e3aab07b7",
+      "filename": "vault/documents/onboarding_dia_ressini.md",
+      "title": "Onboarding: Dia Ressini — Independent Journalism Fellow",
+      "signature": "b67e3aab07b7f7d324b2d275252f25dbf94ed14c1269d74223c6e549af89bd10",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-06T13:22:01.720863Z",
+      "ontology": [
+        "Ethical Guardrails",
+        "Intent",
+        "Interop",
+        "Onboarding: Dia Ressini — Independent Journalism Fellow",
+        "Publishing Workflow",
+        "Research Toolkit (Requests to Assistant)",
+        "Role & Scope",
+        "Setup Steps"
+      ],
+      "cascade": {
+        "integrity": "b67e3aab07b7f7d324b2d275252f25dbf94ed14c1269d74223c6e549af89bd10",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Governance Architect\""
+      ],
+      "tags": [
+        "onboarding",
+        "journalism",
+        "research",
+        "multilingual",
+        "TGC-DAO",
+        "GILC",
+        "Fabrica",
+        "Stitchia"
+      ],
+      "links": [
+        "/Users/thegenuine/TGC-DAO/governance/charter.md"
+      ]
+    },
+    {
+      "id": "4ece28f39392",
+      "filename": "../TGC-DAO/proposals/2025/TGC-P-2025-001-dia-fellowship.md",
+      "title": "Sponsor Fellowship — Dia Ressini (Independent Journalism Fellow)",
+      "signature": "4ece28f393920f9cb378cdebddb938aa212024abcc6736b7072db86f37db3d07",
+      "ethics_status": "flagged",
+      "ethics_reasons": [
+        "validators required but missing"
+      ],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-06T13:29:55.897054Z",
+      "ontology": [
+        "Budget & Duration",
+        "Decision",
+        "Governance",
+        "Implementation Plan",
+        "Links",
+        "Motivation",
+        "Risks & Mitigations",
+        "Scope",
+        "Summary"
+      ],
+      "cascade": {
+        "integrity": "4ece28f393920f9cb378cdebddb938aa212024abcc6736b7072db86f37db3d07",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [],
+      "tags": [],
+      "links": []
     }
   ]
 }

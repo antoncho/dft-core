@@ -14,6 +14,7 @@ from .frontmatter import parse_frontmatter
 from .legal_kernel import assign_license
 from .config_loader import load_config
 from .dashboard_builder import build_and_write
+from .markdown_exporter import export_md
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VAULT_DIR = reg.VAULT_DIR
@@ -428,6 +429,30 @@ def cmd_build(_args):
     print(f"[build] dashboard updated -> {os.path.relpath(out, ROOT)}")
     return 0
 
+
+def _resolve_path_by_id(sid: str) -> str:
+    led = load_ledger()
+    for s in led.get("scrolls", []):
+        if s.get("id") == sid:
+            return os.path.join(ROOT, s.get("filename"))
+    raise FileNotFoundError(f"scroll id not found: {sid}")
+
+
+def cmd_export_doc(args):
+    ensure_dirs()
+    if getattr(args, "id", None):
+        path = _resolve_path_by_id(args.id)
+    else:
+        path = os.path.abspath(args.path)
+    base = os.path.splitext(os.path.basename(path))[0]
+    outdir = os.path.abspath(args.outdir)
+    txt_path = os.path.join(outdir, f"{base}.txt")
+    doc_path = os.path.join(outdir, f"{base}.doc")
+    t, d = export_md(path, txt_path, doc_path)
+    print(f"[export] TXT -> {os.path.relpath(t, ROOT)}")
+    print(f"[export] DOC -> {os.path.relpath(d, ROOT)}")
+    return 0
+
 def build_parser():
     p = argparse.ArgumentParser(description="GILC Quantum Kernel CLI")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -478,6 +503,14 @@ def build_parser():
     # build: rebuild all braids and dashboard data
     p9 = sub.add_parser("build", help="Rebuild all braids and dashboard data")
     p9.set_defaults(func=cmd_build)
+
+    # export-doc: export a scroll to TXT and DOC (RTF)
+    p10 = sub.add_parser("export-doc", help="Export a scroll to TXT and DOC (RTF)")
+    g = p10.add_mutually_exclusive_group(required=True)
+    g.add_argument("--path", help="Path to a markdown scroll")
+    g.add_argument("--id", help="Scroll ID from registry")
+    p10.add_argument("--outdir", default=os.path.join(ROOT, "stitchia-protocol-dev", "docs", "exports"), help="Output directory")
+    p10.set_defaults(func=cmd_export_doc)
 
     return p
 

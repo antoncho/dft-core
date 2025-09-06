@@ -1,0 +1,46 @@
+---
+title: "Onboarding: Dia Ressini — Independent Journalism Fellow"
+classification: Governance+Ethics+StrategicDesign
+validators:
+  - role: "Ethics Steward"
+  - role: "Governance Architect"
+license: Public-Licensed / CodexLinked
+tags: [onboarding, journalism, research, multilingual, TGC-DAO, GILC, Fabrica, Stitchia]
+links:
+  - /Users/thegenuine/TGC-DAO/governance/charter.md
+---
+
+# Onboarding: Dia Ressini — Independent Journalism Fellow
+
+## Intent
+Welcome Dia to the TheGenuine Collective and allied initiatives (GILC, Digital Fabrica, Stitchia) with a clear mission, ethical guardrails, and an actionable publishing workflow.
+
+## Role & Scope
+- Role: Independent Journalism Fellow (research, analysis, publication)
+- Focus: policy, tech, sustainability, governance, civic/digital rights, culture
+- Strengths: curiosity-driven inquiry; multilingual reporting (EN/FR/ES/IT/AR)
+- Support: research planning, data gathering, source validation, editorial framing
+
+## Setup Steps
+1) Create a working folder: `~/TGC-DAO/clients/press-room/` (optional)
+2) Use the prompt provided to access an AI assistant and request research plans, briefings, and drafts.
+3) Save outputs as markdown in `~/TGC-DAO/clients/press-room/notes/` or `vault/documents/`.
+
+## Ethical Guardrails
+- Accuracy first: cite primary sources; avoid unverified claims
+- Independence: disclose conflicts and funding
+- Respect: privacy-by-default; redact sensitive personal data
+- Compliance: follow jurisdictional rules (note: general guidance only; not legal advice)
+
+## Publishing Workflow
+Draft → Fact-check → Editorial review → Publish → Archive braid links and sources in registry.
+
+## Research Toolkit (Requests to Assistant)
+- Multi-source brief: “Summarize X from 3+ primary sources; list full citations.”
+- Regulatory guide (FR): “Outline the administrative steps for <topic> with official links.”
+- Data scan: “Find datasets for <topic> with license details and access method.”
+- Outline & angles: “Propose 3 angles and a 6-section outline for <story>.”
+- Multilingual support: “Translate this summary to FR and improve clarity for a general audience.”
+
+## Interop
+This onboarding scroll links to the TGC-DAO Charter and will connect via tags to related governance and publishing artifacts.

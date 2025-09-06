@@ -1,0 +1,22 @@
+{
+  "id": "b67e3aab07b7",
+  "title": "Onboarding: Dia Ressini — Independent Journalism Fellow",
+  "nodes": [
+    {
+      "id": "b67e3aab07b7",
+      "label": "Onboarding: Dia Ressini — Independent Journalism Fellow",
+      "type": "scroll"
+    }
+  ],
+  "edges": [],
+  "context": {
+    "source": "vault/documents/onboarding_dia_ressini.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

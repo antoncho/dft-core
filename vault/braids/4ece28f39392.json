@@ -1,0 +1,22 @@
+{
+  "id": "4ece28f39392",
+  "title": "Sponsor Fellowship — Dia Ressini (Independent Journalism Fellow)",
+  "nodes": [
+    {
+      "id": "4ece28f39392",
+      "label": "Sponsor Fellowship — Dia Ressini (Independent Journalism Fellow)",
+      "type": "scroll"
+    }
+  ],
+  "edges": [],
+  "context": {
+    "source": "../TGC-DAO/proposals/2025/TGC-P-2025-001-dia-fellowship.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}
