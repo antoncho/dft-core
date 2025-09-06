@@ -1,0 +1,51 @@
+{
+  "id": "0bff6f55d7ea",
+  "title": "Business Stack – GILC Fabrica",
+  "nodes": [
+    {
+      "id": "0bff6f55d7ea",
+      "label": "Business Stack – GILC Fabrica",
+      "type": "scroll"
+    },
+    {
+      "id": "649afd17c591",
+      "label": "🧬 GILC Fabrica – System Blueprint",
+      "type": "scroll"
+    },
+    {
+      "id": "ff61ecfa1e40",
+      "label": "Tech Stack – GILC Fabrica",
+      "type": "scroll"
+    }
+  ],
+  "edges": [
+    {
+      "from": "0bff6f55d7ea",
+      "to": "649afd17c591",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "blueprint"
+      ]
+    },
+    {
+      "from": "0bff6f55d7ea",
+      "to": "ff61ecfa1e40",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "blueprint"
+      ]
+    }
+  ],
+  "context": {
+    "source": "stitchia-protocol-dev/docs/Business_Stack.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

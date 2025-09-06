@@ -43,6 +43,16 @@
       "type": "scroll"
     },
     {
+      "id": "0bff6f55d7ea",
+      "label": "Business Stack – GILC Fabrica",
+      "type": "scroll"
+    },
+    {
+      "id": "ff61ecfa1e40",
+      "label": "Tech Stack – GILC Fabrica",
+      "type": "scroll"
+    },
+    {
       "id": "0a6b42f8bf2d",
       "label": "🧬 Scroll: Creator Crowdfunding Cluster",
       "type": "scroll"
@@ -116,6 +126,24 @@
       "shared": [
         "dashboard",
         "governance"
+      ]
+    },
+    {
+      "from": "649afd17c591",
+      "to": "0bff6f55d7ea",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "blueprint"
+      ]
+    },
+    {
+      "from": "649afd17c591",
+      "to": "ff61ecfa1e40",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "blueprint"
       ]
     },
     {

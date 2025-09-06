@@ -1,0 +1,22 @@
+{
+  "id": "714362a547d1",
+  "title": "Validator Workflow – Seals",
+  "nodes": [
+    {
+      "id": "714362a547d1",
+      "label": "Validator Workflow – Seals",
+      "type": "scroll"
+    }
+  ],
+  "edges": [],
+  "context": {
+    "source": "stitchia-protocol-dev/docs/Validator_Workflow.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}
