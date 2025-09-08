@@ -1,0 +1,87 @@
+{
+  "id": "37b142bd81f1",
+  "title": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
+  "nodes": [
+    {
+      "id": "37b142bd81f1",
+      "label": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
+      "type": "scroll"
+    },
+    {
+      "id": "b67e3aab07b7",
+      "label": "Onboarding: Dia Ressini — Independent Journalism Fellow",
+      "type": "scroll"
+    },
+    {
+      "id": "15a557fe2331",
+      "label": "Role Charter: Executive Secretary (GILC)",
+      "type": "scroll"
+    },
+    {
+      "id": "649afd17c591",
+      "label": "🧬 GILC Fabrica – System Blueprint",
+      "type": "scroll"
+    },
+    {
+      "id": "ff61ecfa1e40",
+      "label": "Tech Stack – GILC Fabrica",
+      "type": "scroll"
+    },
+    {
+      "id": "0bff6f55d7ea",
+      "label": "Business Stack – GILC Fabrica",
+      "type": "scroll"
+    }
+  ],
+  "edges": [
+    {
+      "from": "37b142bd81f1",
+      "to": "b67e3aab07b7",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "onboarding"
+      ]
+    },
+    {
+      "from": "37b142bd81f1",
+      "to": "15a557fe2331",
+      "type": "tag",
+      "weight": 4,
+      "shared": [
+        "archive",
+        "executive",
+        "librarian",
+        "secretary"
+      ]
+    },
+    {
+      "from": "37b142bd81f1",
+      "to": "649afd17c591",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "from": "37b142bd81f1",
+      "to": "ff61ecfa1e40",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "from": "37b142bd81f1",
+      "to": "0bff6f55d7ea",
+      "type": "link",
+      "weight": 1
+    }
+  ],
+  "context": {
+    "source": "vault/documents/onboarding_delyan_donovski.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

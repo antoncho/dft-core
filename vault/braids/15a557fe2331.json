@@ -1,0 +1,57 @@
+{
+  "id": "15a557fe2331",
+  "title": "Role Charter: Executive Secretary (GILC)",
+  "nodes": [
+    {
+      "id": "15a557fe2331",
+      "label": "Role Charter: Executive Secretary (GILC)",
+      "type": "scroll"
+    },
+    {
+      "id": "37b142bd81f1",
+      "label": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
+      "type": "scroll"
+    },
+    {
+      "id": "649afd17c591",
+      "label": "🧬 GILC Fabrica – System Blueprint",
+      "type": "scroll"
+    }
+  ],
+  "edges": [
+    {
+      "from": "15a557fe2331",
+      "to": "37b142bd81f1",
+      "type": "tag",
+      "weight": 4,
+      "shared": [
+        "archive",
+        "executive",
+        "librarian",
+        "secretary"
+      ]
+    },
+    {
+      "from": "15a557fe2331",
+      "to": "37b142bd81f1",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "from": "15a557fe2331",
+      "to": "649afd17c591",
+      "type": "link",
+      "weight": 1
+    }
+  ],
+  "context": {
+    "source": "stitchia-protocol-dev/scrolls/executive_secretary_charter.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

@@ -566,6 +566,107 @@
         "seals"
       ],
       "links": []
+    },
+    {
+      "id": "37b142bd81f1",
+      "filename": "vault/documents/onboarding_delyan_donovski.md",
+      "title": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
+      "signature": "37b142bd81f1159cbaaa2b2ba0cecb631c021fc173f95c436c57ab23847f62b7",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-08T22:20:19.212987Z",
+      "ontology": [
+        "Deliverables (First 30–60 Days)",
+        "Ethics & Compliance",
+        "Initial Access",
+        "KPIs",
+        "Onboarding: Executive Secretary — GILC",
+        "Operating Procedures",
+        "Responsibilities",
+        "Role Summary",
+        "Sign-off"
+      ],
+      "cascade": {
+        "integrity": "37b142bd81f1159cbaaa2b2ba0cecb631c021fc173f95c436c57ab23847f62b7",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Governance Architect\"",
+        "role: \"Data Steward\""
+      ],
+      "tags": [
+        "onboarding",
+        "executive",
+        "secretary",
+        "librarian",
+        "archive",
+        "administration"
+      ],
+      "links": [
+        "stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md",
+        "stitchia-protocol-dev/docs/Tech_Stack.md",
+        "stitchia-protocol-dev/docs/Business_Stack.md"
+      ]
+    },
+    {
+      "id": "15a557fe2331",
+      "filename": "stitchia-protocol-dev/scrolls/executive_secretary_charter.md",
+      "title": "Role Charter: Executive Secretary (GILC)",
+      "signature": "15a557fe233182101791f3536ead77d619eec11cd1d54faa4d7e69fd0373878f",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-08T22:20:56.378476Z",
+      "ontology": [
+        "Core Responsibilities",
+        "Interfaces",
+        "KPIs",
+        "Operating Standards",
+        "Purpose",
+        "Review & Renewal",
+        "Role Charter — Executive Secretary (GILC)",
+        "Scope of Authority"
+      ],
+      "cascade": {
+        "integrity": "15a557fe233182101791f3536ead77d619eec11cd1d54faa4d7e69fd0373878f",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Governance Architect\""
+      ],
+      "tags": [
+        "charter",
+        "role",
+        "executive",
+        "secretary",
+        "librarian",
+        "archive"
+      ],
+      "links": [
+        "vault/documents/onboarding_delyan_donovski.md",
+        "stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md"
+      ]
     }
   ]
 }
