@@ -11,12 +11,26 @@
       "id": "37b142bd81f1",
       "label": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
       "type": "scroll"
+    },
+    {
+      "id": "9c000b800444",
+      "label": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
+      "type": "scroll"
     }
   ],
   "edges": [
     {
       "from": "b67e3aab07b7",
       "to": "37b142bd81f1",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "onboarding"
+      ]
+    },
+    {
+      "from": "b67e3aab07b7",
+      "to": "9c000b800444",
       "type": "tag",
       "weight": 1,
       "shared": [

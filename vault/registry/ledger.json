@@ -667,6 +667,196 @@
         "vault/documents/onboarding_delyan_donovski.md",
         "stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md"
       ]
+    },
+    {
+      "id": "6889d7768793",
+      "filename": "stitchia-protocol-dev/scrolls/archive_policy_v1.md",
+      "title": "Archive Policy v1 — GILC & Digital Fabrica",
+      "signature": "6889d7768793bc9b06d05f955e0b4915f8e2ec89be7d4423ac950e51a4ca9c8f",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-08T23:09:28.915005Z",
+      "ontology": [
+        "Archive Policy v1 — GILC & Digital Fabrica"
+      ],
+      "cascade": {
+        "integrity": "6889d7768793bc9b06d05f955e0b4915f8e2ec89be7d4423ac950e51a4ca9c8f",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Data Steward\"",
+        "role: \"Executive Secretary\""
+      ],
+      "tags": [
+        "policy",
+        "archive",
+        "taxonomy",
+        "retention",
+        "access",
+        "governance"
+      ],
+      "links": [
+        "stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md",
+        "stitchia-protocol-dev/scrolls/executive_secretary_charter.md",
+        "vault/documents/onboarding_delyan_donovski.md"
+      ]
+    },
+    {
+      "id": "96f25aaf1ca1",
+      "filename": "stitchia-protocol-dev/scrolls/filing_schema_map.md",
+      "title": "Filing Schema – GILC & Digital Fabrica",
+      "signature": "96f25aaf1ca19fac31252dae72156647890ef2483084b0ad08bf818ab6592874",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-08T23:09:57.079545Z",
+      "ontology": [
+        "Filing Schema – GILC & Digital Fabrica"
+      ],
+      "cascade": {
+        "integrity": "96f25aaf1ca19fac31252dae72156647890ef2483084b0ad08bf818ab6592874",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Executive Secretary\"",
+        "role: \"Data Steward\""
+      ],
+      "tags": [
+        "filing",
+        "schema",
+        "taxonomy",
+        "index",
+        "governance"
+      ],
+      "links": [
+        "stitchia-protocol-dev/scrolls/archive_policy_v1.md",
+        "stitchia-protocol-dev/scrolls/executive_secretary_charter.md"
+      ]
+    },
+    {
+      "id": "9c000b800444",
+      "filename": "vault/documents/onboarding_delyan_donovski.md",
+      "title": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
+      "signature": "9c000b80044411573ee461ca504f0303c433acfea72c941de3bf53cbd33969da",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-08T23:10:11.172390Z",
+      "ontology": [
+        "Deliverables (First 30–60 Days)",
+        "Ethics & Compliance",
+        "Initial Access",
+        "KPIs",
+        "Onboarding: Executive Secretary — GILC",
+        "Operating Procedures",
+        "Responsibilities",
+        "Role Summary",
+        "Sign-off"
+      ],
+      "cascade": {
+        "integrity": "9c000b80044411573ee461ca504f0303c433acfea72c941de3bf53cbd33969da",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Governance Architect\"",
+        "role: \"Data Steward\""
+      ],
+      "tags": [
+        "onboarding",
+        "executive",
+        "secretary",
+        "librarian",
+        "archive",
+        "administration"
+      ],
+      "links": [
+        "stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md",
+        "stitchia-protocol-dev/docs/Tech_Stack.md",
+        "stitchia-protocol-dev/docs/Business_Stack.md",
+        "stitchia-protocol-dev/scrolls/archive_policy_v1.md",
+        "stitchia-protocol-dev/scrolls/filing_schema_map.md"
+      ]
+    },
+    {
+      "id": "9819797d396e",
+      "filename": "stitchia-protocol-dev/scrolls/executive_secretary_charter.md",
+      "title": "Role Charter: Executive Secretary (GILC)",
+      "signature": "9819797d396ea498a36244863c6d80ce81ea0dafd4ee7436618ab68527e54349",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-09-08T23:10:27.274077Z",
+      "ontology": [
+        "Core Responsibilities",
+        "Interfaces",
+        "KPIs",
+        "Operating Standards",
+        "Purpose",
+        "Review & Renewal",
+        "Role Charter — Executive Secretary (GILC)",
+        "Scope of Authority"
+      ],
+      "cascade": {
+        "integrity": "9819797d396ea498a36244863c6d80ce81ea0dafd4ee7436618ab68527e54349",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Governance Architect\""
+      ],
+      "tags": [
+        "charter",
+        "role",
+        "executive",
+        "secretary",
+        "librarian",
+        "archive"
+      ],
+      "links": [
+        "vault/documents/onboarding_delyan_donovski.md",
+        "stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md",
+        "stitchia-protocol-dev/scrolls/archive_policy_v1.md",
+        "stitchia-protocol-dev/scrolls/filing_schema_map.md"
+      ]
     }
   ]
 }

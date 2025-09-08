@@ -9,6 +9,8 @@ tags: [charter, role, executive, secretary, librarian, archive]
 links:
   - vault/documents/onboarding_delyan_donovski.md
   - stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md
+  - stitchia-protocol-dev/scrolls/archive_policy_v1.md
+  - stitchia-protocol-dev/scrolls/filing_schema_map.md
 ---
 
 # Role Charter — Executive Secretary (GILC)
@@ -46,4 +48,3 @@ Anchor the administrative backbone of GILC and Digital Fabrica; ensure every gov
 
 ## Review & Renewal
 Annual review of charter and responsibilities with Council; propose upgrades to Archive Policy and validator requirements.
-

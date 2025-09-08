@@ -13,6 +13,21 @@
       "type": "scroll"
     },
     {
+      "id": "6889d7768793",
+      "label": "Archive Policy v1 — GILC & Digital Fabrica",
+      "type": "scroll"
+    },
+    {
+      "id": "9c000b800444",
+      "label": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
+      "type": "scroll"
+    },
+    {
+      "id": "9819797d396e",
+      "label": "Role Charter: Executive Secretary (GILC)",
+      "type": "scroll"
+    },
+    {
       "id": "649afd17c591",
       "label": "🧬 GILC Fabrica – System Blueprint",
       "type": "scroll"
@@ -33,7 +48,42 @@
     },
     {
       "from": "15a557fe2331",
-      "to": "37b142bd81f1",
+      "to": "6889d7768793",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "archive"
+      ]
+    },
+    {
+      "from": "15a557fe2331",
+      "to": "9c000b800444",
+      "type": "tag",
+      "weight": 4,
+      "shared": [
+        "archive",
+        "executive",
+        "librarian",
+        "secretary"
+      ]
+    },
+    {
+      "from": "15a557fe2331",
+      "to": "9819797d396e",
+      "type": "tag",
+      "weight": 6,
+      "shared": [
+        "archive",
+        "charter",
+        "executive",
+        "librarian",
+        "role",
+        "secretary"
+      ]
+    },
+    {
+      "from": "15a557fe2331",
+      "to": "9c000b800444",
       "type": "link",
       "weight": 1
     },

@@ -11,6 +11,8 @@ links:
   - stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md
   - stitchia-protocol-dev/docs/Tech_Stack.md
   - stitchia-protocol-dev/docs/Business_Stack.md
+  - stitchia-protocol-dev/scrolls/archive_policy_v1.md
+  - stitchia-protocol-dev/scrolls/filing_schema_map.md
 ---
 
 # Onboarding: Executive Secretary — GILC
@@ -58,4 +60,3 @@ Welcome Delyan Donovski. This scroll establishes initial access, responsibilitie
 
 ## Sign-off
 Upon validator approval, this onboarding is considered active and effective.
-

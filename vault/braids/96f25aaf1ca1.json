@@ -1,10 +1,10 @@
 {
-  "id": "29a48fd5e662",
-  "title": "🧬 Scroll: DAO Dashboard",
+  "id": "96f25aaf1ca1",
+  "title": "Filing Schema – GILC & Digital Fabrica",
   "nodes": [
     {
-      "id": "29a48fd5e662",
-      "label": "🧬 Scroll: DAO Dashboard",
+      "id": "96f25aaf1ca1",
+      "label": "Filing Schema – GILC & Digital Fabrica",
       "type": "scroll"
     },
     {
@@ -15,6 +15,11 @@
     {
       "id": "aa9a92ffc743",
       "label": "🧬 Scroll: GENESYS NFT – Initiator Mint",
+      "type": "scroll"
+    },
+    {
+      "id": "29a48fd5e662",
+      "label": "🧬 Scroll: DAO Dashboard",
       "type": "scroll"
     },
     {
@@ -43,14 +48,14 @@
       "type": "scroll"
     },
     {
-      "id": "96f25aaf1ca1",
-      "label": "Filing Schema – GILC & Digital Fabrica",
+      "id": "9819797d396e",
+      "label": "Role Charter: Executive Secretary (GILC)",
       "type": "scroll"
     }
   ],
   "edges": [
     {
-      "from": "29a48fd5e662",
+      "from": "96f25aaf1ca1",
       "to": "9afa8008abb3",
       "type": "tag",
       "weight": 1,
@@ -59,88 +64,84 @@
       ]
     },
     {
-      "from": "29a48fd5e662",
+      "from": "96f25aaf1ca1",
       "to": "aa9a92ffc743",
       "type": "tag",
-      "weight": 2,
+      "weight": 1,
       "shared": [
-        "dashboard",
         "governance"
       ]
     },
     {
-      "from": "29a48fd5e662",
+      "from": "96f25aaf1ca1",
+      "to": "29a48fd5e662",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "governance"
+      ]
+    },
+    {
+      "from": "96f25aaf1ca1",
       "to": "9a66229b0f5d",
       "type": "tag",
-      "weight": 4,
+      "weight": 1,
       "shared": [
-        "dashboard",
-        "governance",
-        "proposals",
-        "treasury"
+        "governance"
       ]
     },
     {
-      "from": "29a48fd5e662",
+      "from": "96f25aaf1ca1",
       "to": "947f56e899cc",
       "type": "tag",
-      "weight": 4,
+      "weight": 1,
       "shared": [
-        "dashboard",
-        "governance",
-        "proposals",
-        "treasury"
+        "governance"
       ]
     },
     {
-      "from": "29a48fd5e662",
+      "from": "96f25aaf1ca1",
       "to": "77e28d108ed5",
       "type": "tag",
-      "weight": 4,
+      "weight": 1,
       "shared": [
-        "dashboard",
-        "governance",
-        "proposals",
-        "treasury"
+        "governance"
       ]
     },
     {
-      "from": "29a48fd5e662",
+      "from": "96f25aaf1ca1",
       "to": "649afd17c591",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "governance"
+      ]
+    },
+    {
+      "from": "96f25aaf1ca1",
+      "to": "6889d7768793",
       "type": "tag",
       "weight": 2,
       "shared": [
-        "dashboard",
-        "governance"
+        "governance",
+        "taxonomy"
       ]
     },
     {
-      "from": "29a48fd5e662",
+      "from": "96f25aaf1ca1",
       "to": "6889d7768793",
-      "type": "tag",
-      "weight": 1,
-      "shared": [
-        "governance"
-      ]
+      "type": "link",
+      "weight": 1
     },
     {
-      "from": "29a48fd5e662",
-      "to": "96f25aaf1ca1",
-      "type": "tag",
-      "weight": 1,
-      "shared": [
-        "governance"
-      ]
-    },
-    {
-      "from": "29a48fd5e662",
-      "to": "aa9a92ffc743",
+      "from": "96f25aaf1ca1",
+      "to": "9819797d396e",
       "type": "link",
       "weight": 1
     }
   ],
   "context": {
-    "source": "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md",
+    "source": "stitchia-protocol-dev/scrolls/filing_schema_map.md",
     "clusters": {
       "1": "Creator Crowdfunding",
       "2": "Collective Pools",

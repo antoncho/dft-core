@@ -1,15 +1,20 @@
 {
-  "id": "37b142bd81f1",
+  "id": "9c000b800444",
   "title": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
   "nodes": [
     {
-      "id": "37b142bd81f1",
+      "id": "9c000b800444",
       "label": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
       "type": "scroll"
     },
     {
       "id": "b67e3aab07b7",
       "label": "Onboarding: Dia Ressini — Independent Journalism Fellow",
+      "type": "scroll"
+    },
+    {
+      "id": "37b142bd81f1",
+      "label": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
       "type": "scroll"
     },
     {
@@ -20,11 +25,6 @@
     {
       "id": "6889d7768793",
       "label": "Archive Policy v1 — GILC & Digital Fabrica",
-      "type": "scroll"
-    },
-    {
-      "id": "9c000b800444",
-      "label": "Onboarding: Delyan Donovski — Executive Secretary (GILC)",
       "type": "scroll"
     },
     {
@@ -46,11 +46,16 @@
       "id": "0bff6f55d7ea",
       "label": "Business Stack – GILC Fabrica",
       "type": "scroll"
+    },
+    {
+      "id": "96f25aaf1ca1",
+      "label": "Filing Schema – GILC & Digital Fabrica",
+      "type": "scroll"
     }
   ],
   "edges": [
     {
-      "from": "37b142bd81f1",
+      "from": "9c000b800444",
       "to": "b67e3aab07b7",
       "type": "tag",
       "weight": 1,
@@ -59,29 +64,8 @@
       ]
     },
     {
-      "from": "37b142bd81f1",
-      "to": "15a557fe2331",
-      "type": "tag",
-      "weight": 4,
-      "shared": [
-        "archive",
-        "executive",
-        "librarian",
-        "secretary"
-      ]
-    },
-    {
-      "from": "37b142bd81f1",
-      "to": "6889d7768793",
-      "type": "tag",
-      "weight": 1,
-      "shared": [
-        "archive"
-      ]
-    },
-    {
-      "from": "37b142bd81f1",
-      "to": "9c000b800444",
+      "from": "9c000b800444",
+      "to": "37b142bd81f1",
       "type": "tag",
       "weight": 6,
       "shared": [
@@ -94,7 +78,28 @@
       ]
     },
     {
-      "from": "37b142bd81f1",
+      "from": "9c000b800444",
+      "to": "15a557fe2331",
+      "type": "tag",
+      "weight": 4,
+      "shared": [
+        "archive",
+        "executive",
+        "librarian",
+        "secretary"
+      ]
+    },
+    {
+      "from": "9c000b800444",
+      "to": "6889d7768793",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "archive"
+      ]
+    },
+    {
+      "from": "9c000b800444",
       "to": "9819797d396e",
       "type": "tag",
       "weight": 4,
@@ -106,20 +111,32 @@
       ]
     },
     {
-      "from": "37b142bd81f1",
+      "from": "9c000b800444",
       "to": "649afd17c591",
       "type": "link",
       "weight": 1
     },
     {
-      "from": "37b142bd81f1",
+      "from": "9c000b800444",
       "to": "ff61ecfa1e40",
       "type": "link",
       "weight": 1
     },
     {
-      "from": "37b142bd81f1",
+      "from": "9c000b800444",
       "to": "0bff6f55d7ea",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "from": "9c000b800444",
+      "to": "6889d7768793",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "from": "9c000b800444",
+      "to": "96f25aaf1ca1",
       "type": "link",
       "weight": 1
     }
