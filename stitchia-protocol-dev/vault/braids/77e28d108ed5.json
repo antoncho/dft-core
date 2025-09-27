@@ -1,6 +1,6 @@
 {
   "id": "77e28d108ed5",
-  "generated_at": "2025-09-06T14:03:32.510520+00:00",
+  "generated_at": "2025-09-27T16:46:27.252080+00:00",
   "context": {
     "title": "🧬 Scroll: DAO Dashboard",
     "path": "scrolls/dao_dashboard_scroll.md",
@@ -32,6 +32,21 @@
         "treasury",
         "proposals"
       ]
+    },
+    {
+      "id": "7c90b49169b0",
+      "title": "Stitchia Protocol — Whitepaper v2.5",
+      "tags": [
+        "stitchia",
+        "whitepaper",
+        "protocol",
+        "governance",
+        "validators",
+        "dashboard",
+        "nft",
+        "token",
+        "synq"
+      ]
     }
   ],
   "edges": [
@@ -44,6 +59,16 @@
     {
       "from": "77e28d108ed5",
       "to": "aa9a92ffc743",
+      "type": "tag",
+      "weight": 2,
+      "tags": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "77e28d108ed5",
+      "to": "7c90b49169b0",
       "type": "tag",
       "weight": 2,
       "tags": [

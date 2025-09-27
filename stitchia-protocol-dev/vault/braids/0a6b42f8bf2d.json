@@ -1,6 +1,6 @@
 {
   "id": "0a6b42f8bf2d",
-  "generated_at": "2025-09-06T14:03:32.510307+00:00",
+  "generated_at": "2025-09-27T16:46:27.251771+00:00",
   "context": {
     "title": "creator_cluster_scroll.md",
     "path": "scrolls/creator_cluster_scroll.md",
@@ -33,6 +33,21 @@
         "governance",
         "treasury",
         "proposals"
+      ]
+    },
+    {
+      "id": "7c90b49169b0",
+      "title": "Stitchia Protocol — Whitepaper v2.5",
+      "tags": [
+        "stitchia",
+        "whitepaper",
+        "protocol",
+        "governance",
+        "validators",
+        "dashboard",
+        "nft",
+        "token",
+        "synq"
       ]
     }
   ],
