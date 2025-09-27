@@ -28,8 +28,8 @@ jobs:
 
       - name: Build dashboard data (data.json)
         run: |
-          python stitchia-protocol-dev/quantum init --with-example || true
-          python stitchia-protocol-dev/quantum build || true
+          ./quantum init --with-example || true
+          ./quantum build || true
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
