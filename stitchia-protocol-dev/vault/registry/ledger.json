@@ -114,6 +114,50 @@
       "flags": [],
       "updated_at": "2025-09-06T14:03:02.869449+00:00",
       "created_at": "2025-09-06T14:03:02.869449+00:00"
+    },
+    {
+      "id": "7c90b49169b0",
+      "hash": "7c90b49169b0a11ac425e5cb092e7c81e93a401ae9716b2d52b5da1294fee0ad",
+      "title": "Stitchia Protocol — Whitepaper v2.5",
+      "classification": "Governance+Ethics+StrategicDesign+Protocol",
+      "license": "Public-Licensed / CodexLinked",
+      "validators": [
+        {
+          "role": "Ethics Steward"
+        },
+        {
+          "role": "Governance Architect"
+        }
+      ],
+      "tags": [
+        "stitchia",
+        "whitepaper",
+        "protocol",
+        "governance",
+        "validators",
+        "dashboard",
+        "nft",
+        "token",
+        "synq"
+      ],
+      "links": [
+        "stitchia-protocol-dev/docs/Business_Stack.md",
+        "stitchia-protocol-dev/docs/Tech_Stack.md",
+        "stitchia-protocol-dev/docs/DAO_Dashboard_Spec.md",
+        "stitchia-protocol-dev/docs/Validator_Workflow.md",
+        "stitchia-protocol-dev/docs/STITCHIA_Master_Protocol_Blueprint.md",
+        "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md",
+        "stitchia-protocol-dev/scrolls/genesys_nft_mint.md",
+        "stitchia-protocol-dev/scrolls/archive_policy_v1.md",
+        "stitchia-protocol-dev/scrolls/creator_cluster_scroll.md"
+      ],
+      "path": "docs/whitepaper/stitchia_whitepaper_v2.5.md",
+      "dashboard": null,
+      "flags": [
+        "forbidden:guaranteed returns"
+      ],
+      "updated_at": "2025-09-10T12:40:58.742006+00:00",
+      "created_at": "2025-09-10T12:40:58.742006+00:00"
     }
   ]
 }

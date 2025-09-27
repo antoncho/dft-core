@@ -38,9 +38,5 @@
         "age_days": 7
       }
     ]
-  },
-  "wallet": {
-    "connected": false,
-    "address": null
   }
 }

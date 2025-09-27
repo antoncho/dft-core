@@ -1,5 +1,4 @@
----
-title: "Business Stack – GILC Fabrica"
+title: "Business Stack – GILC Fabrica (v2.5)"
 classification: Governance+Ethics+StrategicDesign
 validators:
   - role: "Steward"
@@ -18,7 +17,8 @@ Products & Services
 - Scroll Infrastructure (Kernel + CLI)
 - Semantic Braid Mapping & Reports
 - Governance Dashboard Integrations
-- Validator & Seal Workflows (Compliance-grade)
+- Validator & Seal Workflows (compliance‑grade)
+- Role NFTs for identity anchoring (non‑financial)
 
 Customers / Segments
 --------------------
@@ -28,16 +28,17 @@ Customers / Segments
 
 Pricing & Licensing
 -------------------
-- Core tooling: Public-Licensed / CodexLinked
-- Custom engagements: service retainers + outcome-based bonuses
+- Core tooling: Public‑Licensed / CodexLinked
+- Custom engagements: service retainers + outcome‑based bonuses
 
 KPIs (Examples)
 ---------------
 - Validator throughput, seal turnaround time
 - Registry growth and scroll completeness
 - Governance participation metrics
+- Ethics flag rate (lower is better)
 
 Go-To-Market
 ------------
 - Reference deployments, blueprint publications, workshops with partners
-
+- Open documentation sets: see `docs/whitepaper/`

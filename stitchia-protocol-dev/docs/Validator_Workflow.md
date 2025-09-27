@@ -1,5 +1,4 @@
----
-title: "Validator Workflow – Seals"
+title: "Validator Workflow – Seals (v2.5)"
 classification: Governance+Ethics+StrategicDesign
 validators:
   - role: "Ethics Steward"
@@ -11,7 +10,7 @@ tags: [validators, seals]
 
 Concept
 -------
-Validators review scrolls and record decisions (approved/rejected) as sealed entries in the registry.
+Validators review scrolls and record decisions (approved/rejected) as sealed entries in the registry with minimal ethics checks.
 
 CLI
 ---
@@ -21,10 +20,11 @@ Registry Fields
 ---------------
 - `seals`: `[ {by, role, status, note, time} ]`
 - `seal_status`: derived: `rejected` if any rejection, else `approved` if any approval, else `none`.
+- `ethics_flags`: list generated during processing (e.g., `missing_validators`, `forbidden:<term>`)
 
 Policy Hints
 ------------
 - Require 2+ approvals for sensitive classifications
 - Enforce role diversity: at least one Ethics Steward + one Architect
 - Auto-flag mismatches between declared `validators` and actual `seals`
-
+- Public artifact publication requires `seal_status=approved` unless Restricted scope

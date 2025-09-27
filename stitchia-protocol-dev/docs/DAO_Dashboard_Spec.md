@@ -1,4 +1,4 @@
-# DAO Dashboard – Data Spec
+# DAO Dashboard – Data Spec (v2.5)
 
 This document specifies the data schema surfaced in the DAO Dashboard. It aligns with scrolls:
 
@@ -8,7 +8,7 @@ This document specifies the data schema surfaced in the DAO Dashboard. It aligns
 ## Governance (Spiral Roles)
 - `roles`: array of role names. Default: ["Anchor","Architect","Steward","Initiator"]
 - `counts`: object mapping role -> integer
-- `members_total`: integer
+- `members_total`: integer (derived if absent using `sum(counts.values())`)
 
 Example:
 ```json
@@ -30,6 +30,7 @@ Example:
   - `title`: string
   - `status`: enum ["Active","In Progress","Completed"]
   - `age_days`: integer
+  - `source`: optional URL or id for audit trails
 
 ## Wallet
 - `connected`: boolean
@@ -38,4 +39,4 @@ Example:
 ## Ethics Guardrails
 - Avoid financial return promises; focus on governance/participation.
 - Show sources for metrics and last update timestamps.
-
+- Provide provenance for counts and treasury where possible (`source` fields).
