@@ -1,0 +1,251 @@
+# ============================================
+# ψ11411-extensions.scroll.yml
+# Unified ScrollDNA: Governance + Rollups + Economics
+# ============================================
+
+scroll:
+  id: ψ11411-extensions
+  version: 1.0.0
+  kind: zkMultiway
+  description: "Governable multiway zk coordination with rollups, incentives, and compliance."
+  anchor: IKL://ψ11411/packs/extensions/v1
+  ethics_kernel: ζπθ-v1
+  chrono_lock: true
+
+# ---- Policy & Reconciliation (governable) ----
+policy:
+  selection_vector: [ConstraintCoverage, Quorum, Epoch, RouteCost, CarbonScore]
+  tie_break: lexCommitment                  # deterministic
+  hash_algo: keccak256                      # for policyHash()
+  nullifier_rules:
+    mode: per-party-per-parent
+    double_spend_slash_ratio: 0.5           # 50% of bonded stake
+  min_quorum: 2                             # parties needed to advance
+  coverage_bits_spec:
+    - price_bounds
+    - inventory_sufficient
+    - transit_days_within_sla
+    - carbon_within_cap
+    - route_cost_within_budget
+
+epoching:
+  window_sec: 120                           # candidate reveal window
+  checkpoint_every: 12                      # create rollup checkpoint every 12 epochs
+  finalize_after: 6                         # soft->hard finality after 6 successor epochs
+  late_arrival_policy: archive_only         # do not affect selection after window
+
+reconciliation:
+  sorter: deterministic_lattice
+  join_operator: lub_policy_vector
+  dominance_order: lex_desc                 # higher is better for first 3, then lower for costs
+  dominance_weights:
+    constraint_coverage: 1.0
+    quorum: 1.0
+    epoch: 1.0
+    route_cost: -1.0
+    carbon_score: -1.0
+
+# ---- Governance Overlay ----
+governance:
+  registry_contract: PolicyRegistry.sol
+  vote_mechanism: quadratic_with_zk_eligibility
+  identity_proof: zkKYC_or_zkPOAP
+  timelock_seconds: 172800                  # 48h
+  quorum_rule:
+    stake_weighted: ">= 0.6667"
+    unique_id_floor: ">= 0.3333"
+  updatable_fields:
+    - policy.selection_vector
+    - policy.nullifier_rules
+    - epoching.window_sec
+    - incentives
+    - slashing
+  emergency:
+    council_multisig: true
+    override_proof_required: true           # recursive SNARK bundle of violation
+    incident_dossier_pin: IKL://ψ11411/incidents/
+
+# ---- Rollups / Proof Aggregation ----
+rollups:
+  epoch_proof:
+    scheme: groth16                          # can swap to plonk/halo2
+    aggregator: recursive
+  rollup_proof:
+    fold_epochs: 12                          # fold checkpoint range
+    public_inputs:
+      - canonical_commitment_root
+      - policy_hash
+      - dag_root
+      - nullifier_supply_root
+  verifiers:
+    - chain: ethereum_l1
+      contract: RollupVerifierL1.sol
+    - chain: op_stack_l2
+      contract: RollupVerifierL2.sol
+
+# ---- Incentives & Economics ----
+incentives:
+  base_fee_per_candidate_wei: "1000000000000000"   # 0.001 ETH (example)
+  priority_tip_enabled: true                       # speeds gossip, not selection bias
+  revenue_split:
+    reconciler: 0.6
+    witnesses: 0.2
+    archivists: 0.2
+  privacy_budget:
+    max_branches_per_party: 3                      # anti-spam
+    branch_fee_multiplier_after_cap: 5.0
+  rewards:
+    valid_candidate_reward: 1.0                    # unitless; scales with base_fee pool
+    finalized_epoch_reward: 5.0
+  penalties:
+    equivocation: "slash:0.5 * stake"
+    invalid_proof: "slash:0.2 * stake"
+    archival_loss: "slash:0.3 * bond"
+
+roles:
+  prover:
+    min_stake: "1 ETH"
+  reconciler:
+    min_stake: "5 ETH"
+    must_run_verifiable_sorter: true
+  witness:
+    availability_attestations: true
+  archivist:
+    storage_bond: "2 ETH"
+    erasure_coding: reed_solomon_20_10
+    proof_of_custody_interval_sec: 3600
+
+# ---- Messaging / Edges ----
+mesh:
+  broker: nats
+  encryption: whisper_tagra
+  topics:
+    candidates: "/ψ11411/zk/po/candidates"
+    reveal: "/ψ11411/zk/po/reveal"
+    reconcile: "/ψ11411/zk/po/reconcile"
+    finalized: "/ψ11411/zk/po/finalized"
+  attestations:
+    - ScrollSeal
+    - ChronoLock
+
+edges:
+  - zkEdgeCommit
+  - zkEdgeProof
+  - zkEdgeSync
+  - zkEdgeVerify
+  - ObserverReconciler
+  - ChronoArchivist
+
+# ---- DLT / Contracts (placeholders) ----
+dlt:
+  chain: ethereum_l1
+  baseline_registry_contract: BaselineRegistry.sol
+  verifier_contract: BaselineVerifier.sol
+  policy_registry_contract: PolicyRegistry.sol
+  addresses:
+    BaselineRegistry: "0xRegistryAddressHere"
+    BaselineVerifier: "0xVerifierAddressHere"
+    PolicyRegistry:   "0xPolicyAddressHere"
+    RollupVerifierL1: "0xRollupL1AddressHere"
+    RollupVerifierL2: "0xRollupL2AddressHere"
+
+# ---- Storage / DAG / Logs ----
+storage:
+  dag_store: IKL://ψ11411/dag
+  proofs:
+    ipfs_pin: true
+    chunking: 1_MB
+  observer_logs:
+    enabled: true
+    format: scrolllog.jsonl
+    retention_days: 365
+
+# ---- Oracles ----
+oracles:
+  carbon_score:
+    method: median_of_experts
+    zk_derived: true
+    dispute_window_sec: 600
+  route_cost:
+    method: tariff_merkle_inclusion
+    zk_derived: true
+
+# ---- Disputes & Overrides ----
+disputes:
+  local:
+    fraud_hint_channel: "/ψ11411/disputes/hints"
+    interactive_zk_game: enabled
+    timeout_sec: 900
+  global_override:
+    override_proof_required: true
+    governance_quorum: ">= 0.6667"
+    state_migration_script: deterministic_from_dag
+
+# ---- Compliance & Selective Disclosure ----
+compliance:
+  zk_kyc_required: optional
+  audit_view_keys:
+    rate_limited: true
+    logged: true
+    authority_roles: ["regulated_auditor"]
+  data_retention_contracts:
+    archivist_retention_days: 180
+    custody_proofs_interval_sec: 3600
+
+# ---- Telemetry (privacy-safe) ----
+telemetry:
+  export:
+    - proof_latency_ms_p50
+    - proof_latency_ms_p95
+    - branch_width
+    - finalization_time_sec
+    - slash_events
+  pii_free: true
+
+# ---- SDK / Tooling Hints ----
+sdk:
+  packages:
+    - "@ψ11411/mesh"
+    - "@ψ11411/proofs"
+    - "@ψ11411/policy"
+  simulate_selection: true
+  local_dev:
+    docker_compose: ./ops/docker-compose.yml
+    env_example: ./ops/.env.example
+
+# ---- Security Hardening ----
+security:
+  commit_reveal:
+    enabled: true
+    phases:
+      commit_phase_sec: 40
+      reveal_phase_sec: 80
+  anti_replay_nonce: true
+  sig_schemes: ["secp256k1", "ed25519"]
+  rate_limits:
+    candidates_per_party_per_window: 50
+    window_sec: 120
+
+# ---- Circuits (stubs / references) ----
+circuits:
+  agreement_conformance:
+    path: circuits/agreement_conformance.circom
+    backend: snarkjs
+    public_signals: [coverageBits, quorumMask, epoch, routeCostBucket, carbonScoreBucket, commitment]
+  selection_checker:
+    path: circuits/selection_checker.circom
+    backend: snarkjs
+    public_signals: [chosenCommitment, dominatesAll]
+  epoch_aggregator:
+    path: circuits/epoch_aggregator.circom
+    backend: snarkjs
+
+# ---- Versioning / Hashes ----
+integrity:
+  poseidon_root_of_config: "TO_BE_FILLED_POST-DEPLOY"
+  policy_hash: "TO_BE_SET_BY_POLICY_REGISTRY"
+
+notes:
+  - "Replace contract addresses before deployment."
+  - "If switching to PLONK/Halo2, update verifiers accordingly."
+  - "Set base fees and stake values to match your environment/economics."
