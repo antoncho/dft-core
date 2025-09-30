@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GILC Registry v1",
+  "type": "object",
+  "properties": {
+    "scrolls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "filename": { "type": "string" },
+          "title": { "type": "string" },
+          "signature": { "type": "string" },
+          "ethics_status": { "type": "string" },
+          "ethics_reasons": { "type": "array", "items": { "type": "string" } },
+          "classification": { "type": "string" },
+          "created_at": { "type": "string" },
+          "ontology": { "type": "array", "items": { "type": "string" } },
+          "cascade": {
+            "type": "object",
+            "properties": {
+              "integrity": { "type": "string" },
+              "cascade_version": { "type": "string" }
+            },
+            "required": ["integrity", "cascade_version"]
+          },
+          "license": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "permissions": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "validators": { "type": "array" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "links": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": [
+          "id",
+          "filename",
+          "title",
+          "signature",
+          "ethics_status",
+          "classification",
+          "created_at",
+          "ontology",
+          "cascade"
+        ]
+      }
+    }
+  },
+  "required": ["scrolls"]
+}
