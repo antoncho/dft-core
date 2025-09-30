@@ -1,0 +1,10 @@
+{
+  "ethics": {
+    "forbidden_tokens": ["malware_payload", "do_not_distribute"],
+    "blocked_classifications": [],
+    "require_validators": true
+  },
+  "braid": {
+    "tag_edge_weight": 1
+  }
+}
