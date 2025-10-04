@@ -1,3 +1,15 @@
+---
+title: "DAO Dashboard – Data Spec (v2.5)"
+classification: Governance+Ethics+StrategicDesign
+validators:
+  - role: "Architect"
+license: Public-Licensed / CodexLinked
+tags: [dashboard, data-spec]
+links:
+  - stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md
+  - stitchia-protocol-dev/docs/whitepaper/stitchia_whitepaper_v2.5.md
+---
+
 # DAO Dashboard – Data Spec (v2.5)
 
 This document specifies the data schema surfaced in the DAO Dashboard. It aligns with scrolls:
@@ -24,6 +36,7 @@ Example:
 - `staking_eth`: number
 - `protocol_eth`: number
 - `updated_at`: ISO8601
+- `source`: optional citation handle (URL, IPFS hash, or registry id)
 
 ## Proposals
 - `items`: list of objects with fields:
@@ -35,8 +48,10 @@ Example:
 ## Wallet
 - `connected`: boolean
 - `address`: string | null
+- `last_synced_at`: optional ISO8601 for wallet polling cadence
 
 ## Ethics Guardrails
 - Avoid financial return promises; focus on governance/participation.
 - Show sources for metrics and last update timestamps.
 - Provide provenance for counts and treasury where possible (`source` fields).
+- Retain historical snapshots in `frontend/data-history/` if deltas drive governance triggers.

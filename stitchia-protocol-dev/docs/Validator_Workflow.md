@@ -1,9 +1,13 @@
+---
 title: "Validator Workflow – Seals (v2.5)"
 classification: Governance+Ethics+StrategicDesign
 validators:
   - role: "Ethics Steward"
 license: Public-Licensed / CodexLinked
 tags: [validators, seals]
+links:
+  - stitchia-protocol-dev/docs/whitepaper/stitchia_whitepaper_v2.5.md
+  - stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md
 ---
 
 # Validator Workflow – Seals
@@ -28,3 +32,8 @@ Policy Hints
 - Enforce role diversity: at least one Ethics Steward + one Architect
 - Auto-flag mismatches between declared `validators` and actual `seals`
 - Public artifact publication requires `seal_status=approved` unless Restricted scope
+
+Appendices
+----------
+- Seal schema reference: `vault/registry/ledger.json`
+- Validator roster source: `scrolls/dao_dashboard_scroll.md`
