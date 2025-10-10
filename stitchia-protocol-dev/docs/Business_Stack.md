@@ -46,6 +46,7 @@ Go-To-Market
 ------------
 - Reference deployments, blueprint publications, workshops with partners
 - Open documentation sets: see `docs/whitepaper/`
+- Social cadence: TikTok `@stitchiabites` for validator stories + feature drops
 
 Release Alignment
 -----------------

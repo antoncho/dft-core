@@ -1,19 +1,13 @@
----
-title: "Stitchia Protocol — Master Blueprint (Archive)"
-classification: Governance+Ethics+StrategicDesign+Protocol
-validators:
-  - role: "Governance Architect"
-license: Public-Licensed / CodexLinked
-tags: [stitchia, blueprint, archive]
-links:
-  - stitchia-protocol-dev/docs/whitepaper/stitchia_whitepaper_v2.5.md
----
+## Inter-DAO Protocol Sync
 
-# 📘 STITCHIA PROTOCOL — MASTER BLUEPRINT
+This scroll is now synchronized with the Codex Governance Mesh Index `codex://governance/mesh-index/xdao001`.
 
-This short blueprint is superseded by the v2.5 whitepaper, which consolidates protocol, governance, dashboard, and validator workflow details.
+### Participating DAOs:
+- TheGenuine Collective (ψ21001)
+- Stitchia DAO (ψ11001)
+- bmf Capital DAO (ψ31001)
 
-- Whitepaper v2.5: `stitchia-protocol-dev/docs/whitepaper/stitchia_whitepaper_v2.5.md`
-- Changelog: `stitchia-protocol-dev/docs/whitepaper/CHANGELOG.md`
-
-Source scrolls remain canonical and are linked from the whitepaper.
+### Mesh Capabilities:
+- Validator handshake registry
+- Shared ritual triggers
+- Cross-scroll propagation and ethics alignment

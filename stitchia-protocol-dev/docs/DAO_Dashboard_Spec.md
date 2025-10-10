@@ -55,3 +55,22 @@ Example:
 - Show sources for metrics and last update timestamps.
 - Provide provenance for counts and treasury where possible (`source` fields).
 - Retain historical snapshots in `frontend/data-history/` if deltas drive governance triggers.
+
+## Inter-DAO Protocol Sync
+
+This dashboard instance is now linked to the Codex Governance Mesh Index `codex://governance/mesh-index/xdao001`. The following DAOs participate in this protocol bridge:
+
+- Stitchia DAO (ψ11001)
+- TheGenuine Collective (ψ21001)
+- bmf Capital DAO (ψ31001)
+
+### Mesh Capabilities:
+- Validator handshake registry
+- Shared ritual execution triggers
+- Ethics kernel drift synchronization
+- Cross-scroll semantic propagation
+
+### Codex Reference:
+- Index ID: `xdao001`
+- Status: Live & CodexLinked
+- Update Frequency: Real-time pulse + quantum_registry anchored

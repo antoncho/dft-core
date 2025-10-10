@@ -47,3 +47,7 @@ Authoring scrolls
 Frontend
 --------
 - Open `stitchia-protocol-dev/frontend/index.html` directly; it consumes `frontend/data.json`.
+
+Community
+---------
+- Validator briefings, roadmap drops, and live demos: TikTok `@stitchiabites`
