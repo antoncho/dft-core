@@ -857,6 +857,166 @@
         "stitchia-protocol-dev/scrolls/archive_policy_v1.md",
         "stitchia-protocol-dev/scrolls/filing_schema_map.md"
       ]
+    },
+    {
+      "id": "73701e55ddc1",
+      "filename": "../TGC-DAO/clients/press-room/README.md",
+      "title": "Press Room — TheGenuine Collective",
+      "signature": "73701e55ddc15a0fbac6c56654245b96edd73d47c48599a8d8de8c0bde94acc4",
+      "ethics_status": "flagged",
+      "ethics_reasons": [
+        "validators required but missing"
+      ],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T14:12:08.627425Z",
+      "ontology": [
+        "Press Room — TheGenuine Collective"
+      ],
+      "cascade": {
+        "integrity": "73701e55ddc15a0fbac6c56654245b96edd73d47c48599a8d8de8c0bde94acc4",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [],
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": "1d4f91c58c1d",
+      "filename": "../TGC-DAO/governance/charter.md",
+      "title": "TGC-DAO Charter",
+      "signature": "1d4f91c58c1de12081f31160c7eae60ab1d456b84d49541e5fbc114dc5437df2",
+      "ethics_status": "flagged",
+      "ethics_reasons": [
+        "validators required but missing"
+      ],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T14:12:08.641581Z",
+      "ontology": [
+        "TGC-DAO Charter"
+      ],
+      "cascade": {
+        "integrity": "1d4f91c58c1de12081f31160c7eae60ab1d456b84d49541e5fbc114dc5437df2",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [],
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": "67c47e59c760",
+      "filename": "../TGC-DAO/governance/members/dia_ressini.md",
+      "title": "Member Profile — Dia Ressini",
+      "signature": "67c47e59c760d4e5d40b1ddc0bb79fdcdf46f527030556c31e4e66fd1e4ad2b0",
+      "ethics_status": "flagged",
+      "ethics_reasons": [
+        "validators required but missing"
+      ],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T14:12:08.646383Z",
+      "ontology": [
+        "Member Profile — Dia Ressini"
+      ],
+      "cascade": {
+        "integrity": "67c47e59c760d4e5d40b1ddc0bb79fdcdf46f527030556c31e4e66fd1e4ad2b0",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [],
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": "dafda7cb5342",
+      "filename": "../TGC-DAO/governance/process.md",
+      "title": "Governance Process",
+      "signature": "dafda7cb5342135139c6e4d9122f283efc3aae6a6c469c18f567a65ad08ed8b7",
+      "ethics_status": "flagged",
+      "ethics_reasons": [
+        "validators required but missing"
+      ],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T14:12:08.650160Z",
+      "ontology": [
+        "Governance Process"
+      ],
+      "cascade": {
+        "integrity": "dafda7cb5342135139c6e4d9122f283efc3aae6a6c469c18f567a65ad08ed8b7",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [],
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": "44aa03a51dab",
+      "filename": "../TGC-DAO/proposals/templates/proposal.md",
+      "title": "<Concise Title>",
+      "signature": "44aa03a51dab80710c29f8faeb93377895c1e3cd36367a980640a6785703d37f",
+      "ethics_status": "flagged",
+      "ethics_reasons": [
+        "validators required but missing"
+      ],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T14:12:08.657128Z",
+      "ontology": [
+        "Appendix",
+        "Governance",
+        "Implementation Plan",
+        "Motivation",
+        "Specification",
+        "Summary"
+      ],
+      "cascade": {
+        "integrity": "44aa03a51dab80710c29f8faeb93377895c1e3cd36367a980640a6785703d37f",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [],
+      "tags": [],
+      "links": []
     }
   ]
 }

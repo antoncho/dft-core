@@ -1,0 +1,22 @@
+{
+  "id": "1d4f91c58c1d",
+  "title": "TGC-DAO Charter",
+  "nodes": [
+    {
+      "id": "1d4f91c58c1d",
+      "label": "TGC-DAO Charter",
+      "type": "scroll"
+    }
+  ],
+  "edges": [],
+  "context": {
+    "source": "../TGC-DAO/governance/charter.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

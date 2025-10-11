@@ -1,0 +1,22 @@
+{
+  "id": "67c47e59c760",
+  "title": "Member Profile — Dia Ressini",
+  "nodes": [
+    {
+      "id": "67c47e59c760",
+      "label": "Member Profile — Dia Ressini",
+      "type": "scroll"
+    }
+  ],
+  "edges": [],
+  "context": {
+    "source": "../TGC-DAO/governance/members/dia_ressini.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

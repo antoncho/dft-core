@@ -1,0 +1,22 @@
+{
+  "id": "73701e55ddc1",
+  "title": "Press Room — TheGenuine Collective",
+  "nodes": [
+    {
+      "id": "73701e55ddc1",
+      "label": "Press Room — TheGenuine Collective",
+      "type": "scroll"
+    }
+  ],
+  "edges": [],
+  "context": {
+    "source": "../TGC-DAO/clients/press-room/README.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

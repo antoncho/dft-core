@@ -1,0 +1,22 @@
+{
+  "id": "dafda7cb5342",
+  "title": "Governance Process",
+  "nodes": [
+    {
+      "id": "dafda7cb5342",
+      "label": "Governance Process",
+      "type": "scroll"
+    }
+  ],
+  "edges": [],
+  "context": {
+    "source": "../TGC-DAO/governance/process.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

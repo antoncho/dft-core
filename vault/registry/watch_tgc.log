@@ -136,3 +136,142 @@
 [ok] Braid generated -> vault/braids/15a557fe2331.json
 [ok] Braid generated -> vault/braids/6889d7768793.json
 [ok] Braid generated -> vault/braids/96f25aaf1ca1.json
+[watch] dashboard updated -> stitchia-protocol-dev/frontend/data.json
+[watch] change detected -> vault/documents/onboarding_delyan_donovski.md
+[watch] processing 1 file(s) (debounce=0.50s)
+[ok] Processed scroll 'Onboarding: Delyan Donovski — Executive Secretary (GILC)' -> id=9c000b800444
+[ok] Braid generated -> vault/braids/9c000b800444.json
+[ok] Dashboard data updated -> stitchia-protocol-dev/frontend/data.json
+[watch] dashboard updated -> stitchia-protocol-dev/frontend/data.json
+[ok] Braid generated -> vault/braids/0a6b42f8bf2d.json
+[ok] Braid generated -> vault/braids/9afa8008abb3.json
+[ok] Braid generated -> vault/braids/6ba6ac2dbfd1.json
+[ok] Braid generated -> vault/braids/aa9a92ffc743.json
+[ok] Braid generated -> vault/braids/29a48fd5e662.json
+[ok] Braid generated -> vault/braids/9a66229b0f5d.json
+[ok] Braid generated -> vault/braids/947f56e899cc.json
+[ok] Braid generated -> vault/braids/77e28d108ed5.json
+[ok] Braid generated -> vault/braids/649afd17c591.json
+[ok] Braid generated -> vault/braids/b67e3aab07b7.json
+[ok] Braid generated -> vault/braids/4ece28f39392.json
+[ok] Braid generated -> vault/braids/0bff6f55d7ea.json
+[ok] Braid generated -> vault/braids/ff61ecfa1e40.json
+[ok] Braid generated -> vault/braids/714362a547d1.json
+[ok] Braid generated -> vault/braids/37b142bd81f1.json
+[ok] Braid generated -> vault/braids/15a557fe2331.json
+[ok] Braid generated -> vault/braids/6889d7768793.json
+[ok] Braid generated -> vault/braids/96f25aaf1ca1.json
+[ok] Braid generated -> vault/braids/9c000b800444.json
+[watch] dashboard updated -> stitchia-protocol-dev/frontend/data.json
+[watch] change detected -> stitchia-protocol-dev/scrolls/executive_secretary_charter.md
+[watch] processing 1 file(s) (debounce=0.50s)
+[ok] Processed scroll 'Role Charter: Executive Secretary (GILC)' -> id=9819797d396e
+[ok] Braid generated -> vault/braids/9819797d396e.json
+[ok] Dashboard data updated -> stitchia-protocol-dev/frontend/data.json
+[watch] dashboard updated -> stitchia-protocol-dev/frontend/data.json
+[ok] Braid generated -> vault/braids/0a6b42f8bf2d.json
+[ok] Braid generated -> vault/braids/9afa8008abb3.json
+[ok] Braid generated -> vault/braids/6ba6ac2dbfd1.json
+[ok] Braid generated -> vault/braids/aa9a92ffc743.json
+[ok] Braid generated -> vault/braids/29a48fd5e662.json
+[ok] Braid generated -> vault/braids/9a66229b0f5d.json
+[ok] Braid generated -> vault/braids/947f56e899cc.json
+[ok] Braid generated -> vault/braids/77e28d108ed5.json
+[ok] Braid generated -> vault/braids/649afd17c591.json
+[ok] Braid generated -> vault/braids/b67e3aab07b7.json
+[ok] Braid generated -> vault/braids/4ece28f39392.json
+[ok] Braid generated -> vault/braids/0bff6f55d7ea.json
+[ok] Braid generated -> vault/braids/ff61ecfa1e40.json
+[ok] Braid generated -> vault/braids/714362a547d1.json
+[ok] Braid generated -> vault/braids/37b142bd81f1.json
+[ok] Braid generated -> vault/braids/15a557fe2331.json
+[ok] Braid generated -> vault/braids/6889d7768793.json
+[ok] Braid generated -> vault/braids/96f25aaf1ca1.json
+[ok] Braid generated -> vault/braids/9c000b800444.json
+[ok] Braid generated -> vault/braids/9819797d396e.json
+[watch] dashboard updated -> stitchia-protocol-dev/frontend/data.json
+[ok] Braid generated -> vault/braids/0a6b42f8bf2d.json
+[ok] Braid generated -> vault/braids/9afa8008abb3.json
+[ok] Braid generated -> vault/braids/6ba6ac2dbfd1.json
+[ok] Braid generated -> vault/braids/aa9a92ffc743.json
+[ok] Braid generated -> vault/braids/29a48fd5e662.json
+[ok] Braid generated -> vault/braids/9a66229b0f5d.json
+[ok] Braid generated -> vault/braids/947f56e899cc.json
+[ok] Braid generated -> vault/braids/77e28d108ed5.json
+[ok] Braid generated -> vault/braids/649afd17c591.json
+[ok] Braid generated -> vault/braids/b67e3aab07b7.json
+[ok] Braid generated -> vault/braids/4ece28f39392.json
+[ok] Braid generated -> vault/braids/0bff6f55d7ea.json
+[ok] Braid generated -> vault/braids/ff61ecfa1e40.json
+[ok] Braid generated -> vault/braids/714362a547d1.json
+[ok] Braid generated -> vault/braids/37b142bd81f1.json
+[ok] Braid generated -> vault/braids/15a557fe2331.json
+[ok] Braid generated -> vault/braids/6889d7768793.json
+[ok] Braid generated -> vault/braids/96f25aaf1ca1.json
+[ok] Braid generated -> vault/braids/9c000b800444.json
+[ok] Braid generated -> vault/braids/9819797d396e.json
+[watch] dashboard updated -> stitchia-protocol-dev/frontend/data.json
+[watch] change detected -> stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md
+[watch] processing 1 file(s) (debounce=0.50s)
+[ok] Scroll already in registry -> id=947f56e899cc
+[ok] Braid generated -> vault/braids/947f56e899cc.json
+[ok] Dashboard data updated -> stitchia-protocol-dev/frontend/data.json
+[watch] dashboard updated -> stitchia-protocol-dev/frontend/data.json
+[ok] Braid generated -> vault/braids/0a6b42f8bf2d.json
+[ok] Braid generated -> vault/braids/9afa8008abb3.json
+[ok] Braid generated -> vault/braids/6ba6ac2dbfd1.json
+[ok] Braid generated -> vault/braids/aa9a92ffc743.json
+[ok] Braid generated -> vault/braids/29a48fd5e662.json
+[ok] Braid generated -> vault/braids/9a66229b0f5d.json
+[ok] Braid generated -> vault/braids/947f56e899cc.json
+[ok] Braid generated -> vault/braids/77e28d108ed5.json
+[ok] Braid generated -> vault/braids/649afd17c591.json
+[ok] Braid generated -> vault/braids/b67e3aab07b7.json
+[ok] Braid generated -> vault/braids/4ece28f39392.json
+[ok] Braid generated -> vault/braids/0bff6f55d7ea.json
+[ok] Braid generated -> vault/braids/ff61ecfa1e40.json
+[ok] Braid generated -> vault/braids/714362a547d1.json
+[ok] Braid generated -> vault/braids/37b142bd81f1.json
+[ok] Braid generated -> vault/braids/15a557fe2331.json
+[ok] Braid generated -> vault/braids/6889d7768793.json
+[ok] Braid generated -> vault/braids/96f25aaf1ca1.json
+[ok] Braid generated -> vault/braids/9c000b800444.json
+[ok] Braid generated -> vault/braids/9819797d396e.json
+[watch] dashboard updated -> stitchia-protocol-dev/frontend/data.json
+[watch] change detected -> ../TGC-DAO/clients/press-room/README.md
+[watch] change detected -> ../TGC-DAO/governance/charter.md
+[watch] change detected -> ../TGC-DAO/governance/members/dia_ressini.md
+[watch] change detected -> ../TGC-DAO/governance/process.md
+[watch] change detected -> ../TGC-DAO/proposals/2025/TGC-P-2025-001-dia-fellowship.md
+[watch] change detected -> ../TGC-DAO/proposals/templates/proposal.md
+[watch] processing 6 file(s) (debounce=0.50s)
+[ok] Processed scroll 'Press Room — TheGenuine Collective' -> id=73701e55ddc1
+[ok] Braid generated -> vault/braids/73701e55ddc1.json
+[ok] Dashboard data updated -> stitchia-protocol-dev/frontend/data.json
+[ok] Processed scroll 'TGC-DAO Charter' -> id=1d4f91c58c1d
+[ok] Braid generated -> vault/braids/1d4f91c58c1d.json
+[ok] Dashboard data updated -> stitchia-protocol-dev/frontend/data.json
+[ok] Processed scroll 'Member Profile — Dia Ressini' -> id=67c47e59c760
+[ok] Braid generated -> vault/braids/67c47e59c760.json
+[ok] Dashboard data updated -> stitchia-protocol-dev/frontend/data.json
+[ok] Processed scroll 'Governance Process' -> id=dafda7cb5342
+[ok] Braid generated -> vault/braids/dafda7cb5342.json
+[ok] Dashboard data updated -> stitchia-protocol-dev/frontend/data.json
+[ok] Scroll already in registry -> id=4ece28f39392
+[ok] Braid generated -> vault/braids/4ece28f39392.json
+[ok] Dashboard data updated -> stitchia-protocol-dev/frontend/data.json
+[ok] Processed scroll '<Concise Title>' -> id=44aa03a51dab
+[ok] Braid generated -> vault/braids/44aa03a51dab.json
+[ok] Dashboard data updated -> stitchia-protocol-dev/frontend/data.json
+[watch] dashboard updated -> stitchia-protocol-dev/frontend/data.json
+[ok] Braid generated -> vault/braids/0a6b42f8bf2d.json
+[ok] Braid generated -> vault/braids/9afa8008abb3.json
+[ok] Braid generated -> vault/braids/6ba6ac2dbfd1.json
+[ok] Braid generated -> vault/braids/aa9a92ffc743.json
+[ok] Braid generated -> vault/braids/29a48fd5e662.json
+[ok] Braid generated -> vault/braids/9a66229b0f5d.json
+[ok] Braid generated -> vault/braids/947f56e899cc.json
+[ok] Braid generated -> vault/braids/77e28d108ed5.json
+[ok] Braid generated -> vault/braids/649afd17c591.json
+[ok] Braid generated -> vault/braids/b67e3aab07b7.json
+[ok] Braid generated -> vault/braids/4ece28f39392.json

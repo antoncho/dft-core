@@ -1,0 +1,22 @@
+{
+  "id": "44aa03a51dab",
+  "title": "<Concise Title>",
+  "nodes": [
+    {
+      "id": "44aa03a51dab",
+      "label": "<Concise Title>",
+      "type": "scroll"
+    }
+  ],
+  "edges": [],
+  "context": {
+    "source": "../TGC-DAO/proposals/templates/proposal.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}
