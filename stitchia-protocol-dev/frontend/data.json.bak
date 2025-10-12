@@ -1,0 +1,25 @@
+{
+  "governance": {
+    "roles": [
+      "Anchor",
+      "Architect",
+      "Steward",
+      "Initiator"
+    ],
+    "counts": {},
+    "members_total": 0
+  },
+  "treasury": {
+    "total_eth": 0,
+    "staking_eth": 0,
+    "protocol_eth": 0,
+    "updated_at": null
+  },
+  "proposals": {
+    "items": []
+  },
+  "wallet": {
+    "connected": false,
+    "address": null
+  }
+}
