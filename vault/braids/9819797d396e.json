@@ -1,0 +1,54 @@
+{
+  "id": "9819797d396e",
+  "title": "Role Charter: Executive Secretary (GILC)",
+  "nodes": [
+    {
+      "id": "9819797d396e",
+      "label": "Role Charter: Executive Secretary (GILC)",
+      "type": "scroll"
+    },
+    {
+      "id": "6889d7768793",
+      "label": "Archive Policy v1 — GILC & Digital Fabrica",
+      "type": "scroll"
+    },
+    {
+      "id": "96f25aaf1ca1",
+      "label": "Filing Schema – GILC & Digital Fabrica",
+      "type": "scroll"
+    }
+  ],
+  "edges": [
+    {
+      "from": "9819797d396e",
+      "to": "6889d7768793",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "archive"
+      ]
+    },
+    {
+      "from": "9819797d396e",
+      "to": "6889d7768793",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "from": "9819797d396e",
+      "to": "96f25aaf1ca1",
+      "type": "link",
+      "weight": 1
+    }
+  ],
+  "context": {
+    "source": "stitchia-protocol-dev/scrolls/executive_secretary_charter.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

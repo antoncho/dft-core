@@ -1,0 +1,72 @@
+{
+  "id": "947f56e899cc",
+  "title": "🧬 Scroll: DAO Dashboard",
+  "nodes": [
+    {
+      "id": "947f56e899cc",
+      "label": "🧬 Scroll: DAO Dashboard",
+      "type": "scroll"
+    },
+    {
+      "id": "6889d7768793",
+      "label": "Archive Policy v1 — GILC & Digital Fabrica",
+      "type": "scroll"
+    },
+    {
+      "id": "96f25aaf1ca1",
+      "label": "Filing Schema – GILC & Digital Fabrica",
+      "type": "scroll"
+    },
+    {
+      "id": "aa9a92ffc743",
+      "label": "🧬 Scroll: GENESYS NFT – Initiator Mint",
+      "type": "scroll"
+    }
+  ],
+  "edges": [
+    {
+      "from": "947f56e899cc",
+      "to": "6889d7768793",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "governance"
+      ]
+    },
+    {
+      "from": "947f56e899cc",
+      "to": "96f25aaf1ca1",
+      "type": "tag",
+      "weight": 1,
+      "shared": [
+        "governance"
+      ]
+    },
+    {
+      "from": "947f56e899cc",
+      "to": "aa9a92ffc743",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
+      ]
+    },
+    {
+      "from": "947f56e899cc",
+      "to": "aa9a92ffc743",
+      "type": "link",
+      "weight": 1
+    }
+  ],
+  "context": {
+    "source": "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md",
+    "clusters": {
+      "1": "Creator Crowdfunding",
+      "2": "Collective Pools",
+      "3": "R&D Launchpad",
+      "4": "Civic Justice DAOs",
+      "5": "Genesis NFT + DAO Dashboard"
+    }
+  }
+}

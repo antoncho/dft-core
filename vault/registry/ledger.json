@@ -1,0 +1,258 @@
+{
+  "scrolls": [
+    {
+      "id": "6889d7768793",
+      "filename": "stitchia-protocol-dev/scrolls/archive_policy_v1.md",
+      "title": "Archive Policy v1 — GILC & Digital Fabrica",
+      "signature": "6889d7768793bc9b06d05f955e0b4915f8e2ec89be7d4423ac950e51a4ca9c8f",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T23:57:09.866337Z",
+      "ontology": [
+        "Archive Policy v1 — GILC & Digital Fabrica"
+      ],
+      "cascade": {
+        "integrity": "6889d7768793bc9b06d05f955e0b4915f8e2ec89be7d4423ac950e51a4ca9c8f",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Data Steward\"",
+        "role: \"Executive Secretary\""
+      ],
+      "tags": [
+        "policy",
+        "archive",
+        "taxonomy",
+        "retention",
+        "access",
+        "governance"
+      ],
+      "links": [
+        "stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md",
+        "stitchia-protocol-dev/scrolls/executive_secretary_charter.md",
+        "vault/documents/onboarding_delyan_donovski.md"
+      ]
+    },
+    {
+      "id": "0a6b42f8bf2d",
+      "filename": "stitchia-protocol-dev/scrolls/creator_cluster_scroll.md",
+      "title": "🧬 Scroll: Creator Crowdfunding Cluster",
+      "signature": "0a6b42f8bf2de32ad4e479306b1b0c1a222f42bab11cbf812f6c14b7d26cc0d6",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T23:57:09.894535Z",
+      "ontology": [
+        "Mechanics",
+        "Purpose",
+        "🧬 Scroll: Creator Crowdfunding Cluster"
+      ],
+      "cascade": {
+        "integrity": "0a6b42f8bf2de32ad4e479306b1b0c1a222f42bab11cbf812f6c14b7d26cc0d6",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [],
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": "947f56e899cc",
+      "filename": "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md",
+      "title": "🧬 Scroll: DAO Dashboard",
+      "signature": "947f56e899cc2d048670344535cc011a2179f5ebcbf1916deb3754b17c0be3a0",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T23:57:09.895786Z",
+      "ontology": [
+        "Ethics",
+        "Governance (Spiral Roles)",
+        "Proposals",
+        "Treasury",
+        "Wallet Integration",
+        "🧬 DAO Dashboard"
+      ],
+      "cascade": {
+        "integrity": "947f56e899cc2d048670344535cc011a2179f5ebcbf1916deb3754b17c0be3a0",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Data Steward\"",
+        "role: \"Governance Architect\""
+      ],
+      "tags": [
+        "dashboard",
+        "governance",
+        "treasury",
+        "proposals"
+      ],
+      "links": [
+        "stitchia-protocol-dev/scrolls/genesys_nft_mint.md"
+      ]
+    },
+    {
+      "id": "9819797d396e",
+      "filename": "stitchia-protocol-dev/scrolls/executive_secretary_charter.md",
+      "title": "Role Charter: Executive Secretary (GILC)",
+      "signature": "9819797d396ea498a36244863c6d80ce81ea0dafd4ee7436618ab68527e54349",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T23:57:09.897115Z",
+      "ontology": [
+        "Core Responsibilities",
+        "Interfaces",
+        "KPIs",
+        "Operating Standards",
+        "Purpose",
+        "Review & Renewal",
+        "Role Charter — Executive Secretary (GILC)",
+        "Scope of Authority"
+      ],
+      "cascade": {
+        "integrity": "9819797d396ea498a36244863c6d80ce81ea0dafd4ee7436618ab68527e54349",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Governance Architect\""
+      ],
+      "tags": [
+        "charter",
+        "role",
+        "executive",
+        "secretary",
+        "librarian",
+        "archive"
+      ],
+      "links": [
+        "vault/documents/onboarding_delyan_donovski.md",
+        "stitchia-protocol-dev/docs/GILC_Fabrica_Blueprint.md",
+        "stitchia-protocol-dev/scrolls/archive_policy_v1.md",
+        "stitchia-protocol-dev/scrolls/filing_schema_map.md"
+      ]
+    },
+    {
+      "id": "96f25aaf1ca1",
+      "filename": "stitchia-protocol-dev/scrolls/filing_schema_map.md",
+      "title": "Filing Schema – GILC & Digital Fabrica",
+      "signature": "96f25aaf1ca19fac31252dae72156647890ef2483084b0ad08bf818ab6592874",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T23:57:09.898293Z",
+      "ontology": [
+        "Filing Schema – GILC & Digital Fabrica"
+      ],
+      "cascade": {
+        "integrity": "96f25aaf1ca19fac31252dae72156647890ef2483084b0ad08bf818ab6592874",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Executive Secretary\"",
+        "role: \"Data Steward\""
+      ],
+      "tags": [
+        "filing",
+        "schema",
+        "taxonomy",
+        "index",
+        "governance"
+      ],
+      "links": [
+        "stitchia-protocol-dev/scrolls/archive_policy_v1.md",
+        "stitchia-protocol-dev/scrolls/executive_secretary_charter.md"
+      ]
+    },
+    {
+      "id": "aa9a92ffc743",
+      "filename": "stitchia-protocol-dev/scrolls/genesys_nft_mint.md",
+      "title": "🧬 Scroll: GENESYS NFT – Initiator Mint",
+      "signature": "aa9a92ffc7435baceebe1aa90bfcb3d58411194f20040a5d9ea5f03b43cfe7cb",
+      "ethics_status": "validated",
+      "ethics_reasons": [],
+      "classification": "Governance+Ethics+StrategicDesign",
+      "created_at": "2025-10-11T23:57:09.899488Z",
+      "ontology": [
+        "Attributes",
+        "Ethics",
+        "Governance Links",
+        "Minting",
+        "🧬 GENESYS NFT – Initiator"
+      ],
+      "cascade": {
+        "integrity": "aa9a92ffc7435baceebe1aa90bfcb3d58411194f20040a5d9ea5f03b43cfe7cb",
+        "cascade_version": "ΣΩΩ.3.2"
+      },
+      "license": {
+        "name": "Public-Licensed / CodexLinked",
+        "permissions": [
+          "EXECUTE",
+          "SEAL",
+          "LINK",
+          "EXPORT"
+        ]
+      },
+      "validators": [
+        "role: \"Ethics Steward\"",
+        "role: \"Governance Architect\""
+      ],
+      "tags": [
+        "nft",
+        "genesis",
+        "governance",
+        "dashboard"
+      ],
+      "links": [
+        "stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md"
+      ]
+    }
+  ]
+}
