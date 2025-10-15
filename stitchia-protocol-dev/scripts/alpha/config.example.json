@@ -1,0 +1,29 @@
+{
+  "synq": {
+    "initialSupply": "1000000",
+    "cap": "100000000",
+    "decimals": 18
+  },
+  "genesis": {
+    "baseURI": "ipfs://QmExampleBaseUri/",
+    "admin": "use runtime signer",
+    "defaultRole": {
+      "spiral": "Regen Spiral",
+      "role": "Initiator",
+      "generation": "Genesis",
+      "uri": ""
+    }
+  },
+  "pulse": {
+    "metrics": [
+      { "id": "participation", "label": "Participation Score", "weight": 100000, "enabled": true },
+      { "id": "validator", "label": "Validator Throughput", "weight": 50000, "enabled": true }
+    ]
+  },
+  "dao": {
+    "votingDelay": 1,
+    "votingPeriod": 40,
+    "quorumVotes": "10",
+    "defaultMetrics": ["participation", "validator"]
+  }
+}
