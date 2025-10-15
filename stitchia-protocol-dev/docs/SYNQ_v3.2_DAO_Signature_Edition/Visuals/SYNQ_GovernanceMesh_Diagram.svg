@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500">
+  <style>
+    .title { font: bold 18px Helvetica, Arial, sans-serif; fill: #1A1646; }
+    .label { font: 12px Helvetica, Arial, sans-serif; fill: #000; }
+  </style>
+  <text x="20" y="30" class="title">SYNQ Governance Mesh — SYNQ + GenesisNFT + PulseScorer → StitchiaDAO</text>
+  <!-- Nodes -->
+  <rect x="80" y="100" width="200" height="60" fill="#E2B04C"/><text x="110" y="135" class="label">SYNQ Token (Holdings)</text>
+  <rect x="350" y="100" width="200" height="60" fill="#1A1646"/><text x="370" y="135" class="label" fill="#fff">GenesisNFT (Role)</text>
+  <rect x="620" y="100" width="200" height="60" fill="#888"/><text x="640" y="135" class="label">PulseScorer (Impact)</text>
+  <rect x="350" y="280" width="200" height="60" fill="#1A1646"/><text x="380" y="315" class="label" fill="#fff">StitchiaDAO (Treasury)</text>
+  <!-- Edges -->
+  <line x1="180" y1="160" x2="450" y2="280" stroke="#1A1646" stroke-width="3" />
+  <line x1="450" y1="160" x2="450" y2="280" stroke="#1A1646" stroke-width="3" />
+  <line x1="720" y1="160" x2="450" y2="280" stroke="#1A1646" stroke-width="3" />
+  <!-- Footer -->
+  <text x="20" y="470" class="label">Voting Power = SYNQ holdings + GenesisNFT bonus + Pulse impact weight. Multi-sig + audits + MiCA alignment.</text>
+</svg>

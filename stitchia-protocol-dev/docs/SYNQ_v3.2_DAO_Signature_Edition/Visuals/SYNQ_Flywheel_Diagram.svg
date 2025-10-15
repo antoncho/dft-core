@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400">
+  <style>
+    .title { font: bold 18px Helvetica, Arial, sans-serif; fill: #1A1646; }
+    .label { font: 12px Helvetica, Arial, sans-serif; fill: #000; }
+  </style>
+  <text x="20" y="30" class="title">SYNQ Impact FX Loop — Stake → Yield → Impact → Regenerate → Stake</text>
+  <!-- Circles -->
+  <circle cx="150" cy="200" r="60" fill="#E2B04C"/><text x="115" y="205" class="label">Stake</text>
+  <circle cx="350" cy="200" r="60" fill="#1A1646"/><text x="325" y="205" class="label" fill="#fff">Yield</text>
+  <circle cx="550" cy="200" r="60" fill="#888"/><text x="520" y="205" class="label">Impact</text>
+  <circle cx="750" cy="200" r="60" fill="#E2B04C"/><text x="705" y="205" class="label">Regenerate</text>
+  <!-- Arrows -->
+  <line x1="210" y1="200" x2="290" y2="200" stroke="#1A1646" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="410" y1="200" x2="490" y2="200" stroke="#1A1646" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="610" y1="200" x2="690" y2="200" stroke="#1A1646" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="750" y1="140" x2="150" y2="140" stroke="#1A1646" stroke-width="3" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1A1646" />
+    </marker>
+  </defs>
+</svg>
