@@ -1,0 +1,29 @@
+# Stitchia Alpha Feature Flags (conceptual)
+# Toggle behaviour before hardcoding into contracts/scripts.
+
+impact_router:
+  enabled: false          # flip to true once routing prototype is ready
+  audit_required: true    # require manual review of mock allocations
+
+dashboard:
+  show_pulse_scores: true
+  show_recycling_ratio: true
+  beta_waitlist_banner: true
+
+metrics:
+  participation:
+    enabled: true
+    feeder_whitelist: []  # populate with wallet addresses during alpha
+  validator_throughput:
+    enabled: true
+    feeder_whitelist: []
+  research_contribution:
+    enabled: false        # backlog feature
+
+synq_token:
+  permit_enabled: true
+  pauser_multisig_required: true
+
+notifications:
+  discord_webhook: null   # replace with actual endpoint once comms ready
+  email_digest: false

@@ -1,0 +1,36 @@
+# Draft configuration capturing parameters for Hardhat + protocol scripts.
+# Values are placeholders to be confirmed before real deployment.
+
+network:
+  name: sepolia
+  chain_id: 11155111
+  rpc_url: "https://sepolia.example"   # replace with actual endpoint
+
+accounts:
+  deployer_private_key: "0xabcdef..."   # DO NOT COMMIT REAL KEYS
+  multisig_address: "0x0000000000000000000000000000000000000000"
+
+synq_token:
+  initial_supply: "1000000"
+  cap: "100000000"        # set to "0" for uncapped option
+  decimals: 18
+
+pulse_metrics:
+  - id: participation
+    label: "Participation Score"
+    weight: 100000
+  - id: validator_throughput
+    label: "Validator Throughput"
+    weight: 50000
+
+dao:
+  voting_delay: 1
+  voting_period: 40
+  quorum_votes: "10"
+
+impact_router:
+  recycling_ratio:
+    dao_operations: 0.30
+    green_liquidity: 0.40
+    contributor_fund: 0.30
+  proof_strategy: "manual-ledger"  # upgrade to smart-contract once ready

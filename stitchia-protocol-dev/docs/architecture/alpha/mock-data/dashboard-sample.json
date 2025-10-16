@@ -1,0 +1,30 @@
+{
+  "governance": {
+    "roles": ["Anchor", "Architect", "Steward", "Initiator"],
+    "counts": {"Anchor": 12, "Architect": 9, "Steward": 15, "Initiator": 8},
+    "members_total": 44
+  },
+  "treasury": {
+    "total_eth": 3567,
+    "staking_eth": 1984,
+    "protocol_eth": 1007,
+    "recycling_ratio": {
+      "dao_operations": 0.30,
+      "green_liquidity": 0.40,
+      "contributor_fund": 0.30
+    },
+    "updated_at": "2025-10-15T00:00:00Z"
+  },
+  "proposals": {
+    "items": [
+      {"title": "Fund Mesh Pilot", "status": "Active", "age_days": 3},
+      {"title": "Validator Rewards Revamp", "status": "In Progress", "age_days": 5}
+    ]
+  },
+  "pulse": {
+    "metrics": [
+      {"id": "participation", "label": "Participation Score", "value": 78},
+      {"id": "validator_throughput", "label": "Validator Throughput", "value": 65}
+    ]
+  }
+}

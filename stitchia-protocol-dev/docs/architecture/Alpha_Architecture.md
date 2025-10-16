@@ -24,7 +24,7 @@ the minimum viable deployment footprint for the Stitchia stack.
 | Governance | Proposal lifecycle, Pulse scoring, Spiral roles | `StitchiaDAO.sol`, `PulseScorer.sol`, Genesis NFTs |
 | Economy | Token issuance, Impact FX routing, treasury | `SYNQToken.sol`, treasury vault scripts |
 | Registry | Scroll storage, ethics filters, braid maps | `vault/registry/ledger.json`, `vault/braids/` |
-| Automation | Deployment & CLI workflows | `scripts/alpha/deploy.js`, `quantum` CLI |
+| Automation | Deployment & CLI workflows | `scripts/alpha/deploy.js`, `quantum` CLI, `docs/architecture/alpha/` workspace |
 
 ## 2. On-Chain Primitives
 
@@ -47,6 +47,10 @@ the minimum viable deployment footprint for the Stitchia stack.
 - **Dashboard** — surfaces governance, treasury, impact, reward modules.
 - **Registry exports** — `./quantum export` provides JSON snapshots for analytics.
 - **Investor bundle** — `docs/SYNQ_v3.2_DAO_Signature_Edition/` contains visual collateral and models for stakeholder review.
+- **Design workspace** — see `docs/architecture/alpha/` for component inventory,
+  data-flow notes, feature flags, and operational checklists.
+- **Mock data** — `docs/architecture/alpha/mock-data/dashboard-sample.json`
+  illustrates the payload expected by the dashboard during alpha.
 
 ## 5. Next Steps Toward Beta
 
