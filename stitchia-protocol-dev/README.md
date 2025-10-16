@@ -2,7 +2,7 @@
 
 This repository contains the smart contracts, token logic, documentation, and frontend components of the Stitchia Protocol — a regenerative cultural operating system built for decentralized coordination.
 
-- Whitepaper v2.6: `docs/whitepaper/stitchia_whitepaper_v2.6.md`
+- Whitepaper v2.7: `docs/whitepaper/stitchia_whitepaper_v2.7.md`
 - Changelog: `docs/whitepaper/CHANGELOG.md`
 - Dashboard Spec: `docs/DAO_Dashboard_Spec.md`
 

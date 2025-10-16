@@ -1,5 +1,10 @@
 # Stitchia Protocol – Changelog
 
+## v2.7 (2025-10-16)
+- Promoted integrated DAO Signature edition combining v2.6 architecture, SYNQ Tokenomics v3.2, and Litepaper UX narrative.
+- Added Alpha Architecture reference document and aligned business/tech/validator stacks with latest whitepaper version.
+- Normalized asset links to the SYNQ investor bundle visuals, appendices, and models.
+
 ## v2.6 (2025-09-27)
 - Incorporated SYNQ Tokenomics v3.2 light paper content (utility matrix, Impact FX routing, scenario modeling guidance).
 - Documented alpha Hardhat deployment pipeline and contract role wiring.

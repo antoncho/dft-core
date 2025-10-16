@@ -1,12 +1,12 @@
 ---
-title: "Validator Workflow – Seals (v2.5)"
+title: "Validator Workflow – Seals (v2.7)"
 classification: Governance+Ethics+StrategicDesign
 validators:
   - role: "Ethics Steward"
 license: Public-Licensed / CodexLinked
 tags: [validators, seals]
 links:
-  - stitchia-protocol-dev/docs/whitepaper/stitchia_whitepaper_v2.5.md
+  - stitchia-protocol-dev/docs/whitepaper/stitchia_whitepaper_v2.7.md
   - stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md
 ---
 

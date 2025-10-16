@@ -1,17 +1,17 @@
 ---
-title: "Stitchia Protocol — Whitepaper v3.3 Integrated Edition"
-version: "3.3"
+title: "Stitchia Protocol — Whitepaper v2.6 Integrated Edition"
+version: "2.6"
 date: 2025-10-15
 classification: Governance + Tokenomics + UX + StrategicDesign
 license: Public-Licensed / CodexLinked
 tags: [stitchia, synq, dao, tokenomics, governance, dashboard, regenerative, finance, impact]
 ---
 
-# Stitchia Protocol — Whitepaper v3.3 Integrated Edition
+# Stitchia Protocol — Whitepaper v2.6 Integrated Edition
 
 ## Executive Summary
 
-Stitchia Protocol serves as a digital fabric for regenerative finance, enabling decentralized coordination through an ethics-first governance framework combined with pragmatic execution layers. Version 3.3 integrates advanced tokenomics, user experience enhancements, and a strategic design ethos to foster sustainable impact within decentralized autonomous organizations (DAOs). Anchored by the SYNQ utility and governance token, Genesis NFTs, and Pulse participation metrics, the protocol prioritizes transparency, accountability, and regenerative outcomes. Validators ensure strict adherence to ethical guardrails, preventing promotional or speculative misuse.
+Stitchia Protocol serves as a digital fabric for regenerative finance, enabling decentralized coordination through an ethics-first governance framework combined with pragmatic execution layers. Version 2.6 integrates advanced tokenomics, user experience enhancements, and a strategic design ethos to foster sustainable impact within decentralized autonomous organizations (DAOs). Anchored by the SYNQ utility and governance token, Genesis NFTs, and Pulse participation metrics, the protocol prioritizes transparency, accountability, and regenerative outcomes. Validators ensure strict adherence to ethical guardrails, preventing promotional or speculative misuse.
 
 ## Vision & Philosophy
 

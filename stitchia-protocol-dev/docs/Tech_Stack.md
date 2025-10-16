@@ -1,12 +1,12 @@
 ---
-title: "Tech Stack – GILC Fabrica (v2.5)"
+title: "Tech Stack – Stitchia Protocol (v2.7)"
 classification: Governance+Ethics+StrategicDesign
 validators:
   - role: "Architect"
 license: Public-Licensed / CodexLinked
 tags: [tech, blueprint]
 links:
-  - stitchia-protocol-dev/docs/whitepaper/stitchia_whitepaper_v2.5.md
+  - stitchia-protocol-dev/docs/whitepaper/stitchia_whitepaper_v2.7.md
   - stitchia-protocol-dev/scrolls/genesys_nft_mint.md
 ---
 

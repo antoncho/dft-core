@@ -1,12 +1,12 @@
 ---
-title: "Business Stack – GILC Fabrica (v2.5)"
+title: "Business Stack – Stitchia Protocol (v2.7)"
 classification: Governance+Ethics+StrategicDesign
 validators:
   - role: "Steward"
 license: Public-Licensed / CodexLinked
 tags: [business, blueprint]
 links:
-  - stitchia-protocol-dev/docs/whitepaper/stitchia_whitepaper_v2.5.md
+  - stitchia-protocol-dev/docs/whitepaper/stitchia_whitepaper_v2.7.md
   - stitchia-protocol-dev/scrolls/dao_dashboard_scroll.md
 ---
 
@@ -51,5 +51,5 @@ Go-To-Market
 Release Alignment
 -----------------
 - Current bundle: `releases/v2.5/` (manifest + ZIP archive)
-- Canonical narrative: `docs/whitepaper/stitchia_whitepaper_v2.5.md`
+- Canonical narrative: `docs/whitepaper/stitchia_whitepaper_v2.7.md`
 - Dashboard artifact pipeline: `frontend/data.json` generated via `./quantum build`
