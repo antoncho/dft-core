@@ -31,6 +31,11 @@
       "id": "77e28d108ed5",
       "label": "🧬 Scroll: DAO Dashboard",
       "type": "scroll"
+    },
+    {
+      "id": "649afd17c591",
+      "label": "🧬 GILC Fabrica – System Blueprint",
+      "type": "scroll"
     }
   ],
   "edges": [
@@ -87,6 +92,16 @@
         "governance",
         "proposals",
         "treasury"
+      ]
+    },
+    {
+      "from": "9a66229b0f5d",
+      "to": "649afd17c591",
+      "type": "tag",
+      "weight": 2,
+      "shared": [
+        "dashboard",
+        "governance"
       ]
     },
     {
